@@ -1,7 +1,7 @@
 var ufo;
 function init(){
     window.addEventListener("keydown", keydown);
-    ufo = new UFO(document.getElementById("ufo"), 100);
+    ufo = new UFO(document.getElementById("ufo"), 100);//第一引数がDOM要素,第二引数がx座標
     function keydown(e){
         if(e.keyCode == 37){
             ufo.moveLeft();
