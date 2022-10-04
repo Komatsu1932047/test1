@@ -5,11 +5,13 @@ body {
 	color:#000;
 }
 
-body, div, ul, li, h1, section, header, footer, nav {
+div, ul, li, h1, section, header, footer, nav {
     margin: 0;
     padding: 0;
 }
-
+body { 
+	padding-top: 5rem; 
+}
 a {
 	text-decoration:none;
 	color:#000;
