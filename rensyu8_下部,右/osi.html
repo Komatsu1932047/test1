@@ -3,10 +3,16 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1"><!-- デバイスの画面幅に合わせる -->
 		<title>osi</title>
+
 		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<script src="js/bootstrap.min.js" defer></script>
+		<link href="css/osi.css" rel="stylesheet">
+		<script src="js/bootstrap.bundle.min.js" defer></script>
+		<script src="js/osi.js" defer></script>
+		<script src="js/accordion.js"defer></script>
+		<script src="js/snap.svg-min.js"defer></script>
+		<script src="js/anim.js"defer></script>
     </head>
 	<body>
 		<!-- 上部ナビゲーションタブ -->
@@ -36,28 +42,93 @@
 				  
 			</div>
 		</nav>
-		  
+
+		<div class =" container-fluid">
+			<!-- ここ に 中央コンテンツ を 入れる -->
+			<!-- anim.js -->
+			<svg width="500" height="100">
+				<circle cx="0" cy="50" r="20" class="circle1"></circle>
+			</svg>
+		</div>
+		<!-- 右側の用語説明 -->
+		<div class="container">
+			<!-- オフキャンバス -->
+			<div class="offcanvas offcanvas-end" data-bs-backdrop="false" tabindex="-1" id="exampleOffcanvas" aria-labelledby="exampleOffcanvasLabel">
+			  <div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="exampleOffcanvasLabel">用語解説</h5>
+				<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			  </div>
+			  <!-- オフキャンバスの中身 -->
+			  <div class="offcanvas-body">
+				<!-- アコーディオンタブ -->
+				<div class="accordion" id="js-tes">
+					<p class="accordion-trigger">
+						日本
+					</a>
+					<div class="accordion-contents">
+						国。
+					</div>
+					<p class="accordion-trigger">
+						タブ２
+					</a>
+					<div class="accordion-contents">
+						たぶ
+					</div>
+				</div>
+		
+				<br>
+		
+				<div class="accordion" id="js-accordion">
+					<a href="" class="accordion-trigger">
+						リンク1
+					</a>
+					<div class="accordion-contents">
+						中身1
+					</div>
+					<a href="" class="accordion-trigger">
+						リンク2
+					</a>
+					<div class="accordion-contents">
+						中身2
+					</div>
+				</div>
+		
+				<br>
+		
+				<dl class="accordion" id="js-accordion-mini">
+					<dt class="accordion-trigger">
+						太字
+					</dt>
+					<dt class="accordion-contents">
+						太い
+					</dt>
+				</dl>
+			  </div>
+			</div>
+		  </div>
+
 		<!-- 下部解説タブ -->
 		<nav>
 			<div class="nav nav-tabs" id="nav-tab" role="tablist">
-			  <button type="button" class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">ホーム</button>
-			  <button type="button" class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">プロフィール</button>
-			  <button type="button" class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">コンタクト</button>
+			  <button type="button" class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">1</button>
+			  <button type="button" class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">2</button>
+			  <button type="button" class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">3</button>
 			</div>
 		</nav>
 
 		<!-- パネル部分 -->
 		<div class="tab-content" id="nav-tabContent">
 			<div class="tab-pane active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-			  <p>これは、<strong>ホームタブ</strong>に関連付けられたコンテンツのプレースホルダコンテンツ。...</p>
+
+			  <p>これは、<u class="offcanvas-on" id="bt1">日本</u>の千葉県です</p>
+
 			</div>
 			<div class="tab-pane" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-			  <p>これは、<strong>プロフィールタブ</strong>に関連付けられたコンテンツのプレースホルダコンテンツ。...</p>
+			  <p>これは、２個目の解説文</p>
 			</div>
 			<div class="tab-pane " id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-			  <p>これは、<strong>コンタクトタブ</strong>に関連付けられたコンテンツのプレースホルダコンテンツ。...</p>
+			  <p>これは、３個目</p>
 			</div>
 		</div>
-    <script src="js/osi.js"></script>
 	</body>
 </html>
