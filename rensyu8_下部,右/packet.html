@@ -3,10 +3,14 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1"><!-- デバイスの画面幅に合わせる -->
 		<title>packet</title>
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
+		<script src="js/snap.svg-min.js"defer></script>
+		<script src="js/map.js"defer></script>
+		<script src="js/bootstrap.bundle.min.js" defer></script>
+		<script src="js/popover.js" defer></script>
     </head>
 	<body>
 
@@ -69,8 +73,32 @@
 					<path id="route" fill="none" stroke="#000000" d="M122,404 l125,-108.5 c0,0,40,-34,50,-159 l58,12.5 L355,120" />
 				</g>
 			</svg>
-			<script src="js/snap.svg-min.js"></script>
-			<script src="js/map.js"></script>
-			<script src="js/bootstrap.min.js"></script>
+			<!-- 下部解説タブ -->
+		<nav>
+			<div class="nav nav-tabs" id="nav-tab" role="tablist">
+			  <button type="button" class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">1</button>
+			  <button type="button" class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">2</button>
+			  <button type="button" class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">3</button>
+			</div>
+		</nav>
+
+		<!-- パネル部分 -->
+		<div class="tab-content" id="nav-tabContent">
+			<div class="tab-pane active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+
+			  <p>これは、
+				<a tabindex="0" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="国。">
+					日本
+				</a>
+				の千葉県です</p>
+
+			</div>
+			<div class="tab-pane" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+			  <p>これは、２個目の解説文</p>
+			</div>
+			<div class="tab-pane " id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+			  <p>これは、３個目</p>
+			</div>
+		</div>
 	</body>
 </html>

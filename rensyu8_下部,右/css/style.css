@@ -2,3 +2,13 @@ svg {
 	margin-top:20px;
     display: inline-block;
 }
+body{
+popover-font-size:font-size-sm;
+popover-bg:rgb(141, 95, 95);
+popover-max-width:2px;
+popover-border-width:border-width;
+popover-border-color:rgba(black, .2);
+popover-border-radius:border-radius-lg;
+popover-inner-border-radius:subtract(popover-border-radius, popover-border-width);
+popover-box-shadow:box-shadow;
+}
