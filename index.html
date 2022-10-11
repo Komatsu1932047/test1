@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bootstrapの基本テンプレート</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+	<body>
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<!-- ブラント使わない↓ -->
+			<!--<a class="navbar-brand" href="#">トップ</a> -->
+			<!-- navbar-togglerでレスポンシブ -->
+			<!-- レスポンシブ状態でないと、トグルアイコンは非表示になり、メニューが表示される -->
+			<!-- レスポンシブになると、トグルアイコンが表示され、メニューは非表示になる -->
+			<!-- data-bs-targetとidでコンテンツを連携させる -->
+			<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Nav1" aria-controls="Nav1"
+			  aria-expanded="false" aria-label="ナビゲーションの切替">
+			  <!-- ハンバーガーメニューでボタンを表示 navbar-toggler-icon -->
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- ボタンが押されたら、以下のメニューを開く、メニューはulとliを使う -->
+			<div class="collapse navbar-collapse justify-content-around" id="Nav1">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+					  <a class="nav-link" href="#">ホーム<span class="sr-only"></span></a>
+					</li>
+				  </ul>
+				  <ul class="navbar-nav">
+					<li class="nav-item">
+					  <a class="nav-link" href="#">パケット通信</a>
+					</li>
+				  </ul>
+				  <ul class="navbar-nav">
+					<li class="nav-item">
+					  <a class="nav-link" href="#">OSIモデル</a>
+					</li>
+				  </ul>
+				  
+			</div>
+		  </nav>
+		<script src="js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
