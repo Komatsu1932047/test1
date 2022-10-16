@@ -10,7 +10,6 @@
 		<script src="js/snap.svg-min.js"defer></script>
 		<script src="js/map.js"defer></script>
 		<script src="js/bootstrap.bundle.min.js" defer></script>
-		<script src="js/popover.js" defer></script>
     </head>
 	<body>
 
@@ -37,6 +36,7 @@
 					  <a class="nav-link" href="osi.html">OSIモデル</a>
 					</li>
 				  </ul>
+				  <button type="button" data-bs-toggle="offcanvas" data-bs-target="#exampleOffcanvas" >用語解説</button>
 				  
 			</div>
 		</nav>
@@ -73,6 +73,62 @@
 					<path id="route" fill="none" stroke="#000000" d="M122,404 l125,-108.5 c0,0,40,-34,50,-159 l58,12.5 L355,120" />
 				</g>
 			</svg>
+		<!-- 右側の用語説明 -->
+		<div class="container">
+			<!-- オフキャンバス -->
+			<div class="offcanvas offcanvas-end" data-bs-backdrop="false" tabindex="-1" id="exampleOffcanvas" aria-labelledby="exampleOffcanvasLabel">
+			  <div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="exampleOffcanvasLabel">用語解説</h5>
+				<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			  </div>
+			  <!-- オフキャンバスの中身 -->
+			  <div class="offcanvas-body">
+				<!-- アコーディオンタブ -->
+				<div class="accordion" id="js-tes">
+					<p class="accordion-trigger">
+						日本
+					</a>
+					<div class="accordion-contents">
+						国。
+					</div>
+					<p class="accordion-trigger">
+						タブ２
+					</a>
+					<div class="accordion-contents">
+						たぶ
+					</div>
+				</div>
+		
+				<br>
+		
+				<div class="accordion" id="js-accordion">
+					<a href="" class="accordion-trigger">
+						リンク1
+					</a>
+					<div class="accordion-contents">
+						中身1
+					</div>
+					<a href="" class="accordion-trigger">
+						リンク2
+					</a>
+					<div class="accordion-contents">
+						中身2
+					</div>
+				</div>
+		
+				<br>
+		
+				<dl class="accordion" id="js-accordion-mini">
+					<dt class="accordion-trigger">
+						太字
+					</dt>
+					<dt class="accordion-contents">
+						太い
+					</dt>
+				</dl>
+			  </div>
+			</div>
+		  </div>
 			<!-- 下部解説タブ -->
 		<nav>
 			<div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -87,11 +143,8 @@
 			<div class="tab-pane active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
 
 			  <p>これは、
-				<a tabindex="0"  data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="focus" title="日本" data-bs-placement="bottom" data-bs-content="この機能、あまり長い文章を入れるのに向いていないと思う">
-					<b>日本</b>
 				</a>
 				の千葉県です</p>
-
 			</div>
 			<div class="tab-pane" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
 			  <p>これは、２個目の解説文</p>
