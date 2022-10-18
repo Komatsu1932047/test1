@@ -10,9 +10,9 @@
 		<link href="css/osi.css" rel="stylesheet">
 		<script src="js/bootstrap.bundle.min.js" defer></script>
 		<script src="js/osi.js" defer></script>
-		<script src="js/accordion.js"defer></script>
 		<script src="js/snap.svg-min.js"defer></script>
 		<script src="js/anim.js"defer></script>
+		<script src="js/snap.svg-min.js"defer></script>
     </head>
 	<body>
 		<!-- 上部ナビゲーションタブ -->
@@ -39,7 +39,7 @@
 					  <a class="nav-link" href="#">OSIモデル</a>
 					</li>
 				  </ul>
-				  <button type="button" data-bs-toggle="offcanvas" data-bs-target="#exampleOffcanvas" >用語解説</button>	
+				  <button type="button"  data-bs-toggle="offcanvas" data-bs-target="#exampleOffcanvas" aria-controls="exampleOffcanvas">用語解説</button>	
 				  
 			</div>
 		</nav>
@@ -57,6 +57,7 @@
 			<div class="offcanvas offcanvas-end" data-bs-backdrop="false" tabindex="-1" id="exampleOffcanvas" aria-labelledby="exampleOffcanvasLabel">
 				<div class="offcanvas-header">
 					<h5 class="offcanvas-title" id="exampleOffcanvasLabel">用語解説</h5>
+					<!-- オフキャンバスの閉じるボタン -->
 					<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 			  	</div>
 			  	<!-- オフキャンバスの中身 -->
@@ -64,12 +65,12 @@
 					<!-- アコーディオンタブ -->
 					<div class="accordion" id="accordion_1">
 						<div class="accordion-item">
-						  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-							<button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+						  <h2 class="accordion-header" id="accordion-header_1">
+							<button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion-body_1" aria-expanded="false" aria-controls="accordion-body_1">
 							  アコーディオン・アイテム #1
 							</button>
 						  </h2>
-						  <div id="panelsStayOpen-collapseOne" class="accordion-collapse_1" aria-labelledby="panelsStayOpen-headingOne">
+						  <div id="accordion-body_1" class="accordion-collapse" aria-labelledby="accordion-header_1">
 							<div class="accordion-body">
 							  <strong>これが最初のアイテムのアコーディオン本体。</strong>...
 							</div>
@@ -81,7 +82,7 @@
 							  アコーディオン・アイテム #2
 							</button>
 						  </h2>
-						  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+						  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse" aria-labelledby="panelsStayOpen-headingTwo">
 							<div class="accordion-body">
 							  <strong>これは2番目のアイテムのアコーディオン本体。</strong>...
 							</div>
@@ -93,7 +94,7 @@
 							  アコーディオン・アイテム #3
 							</button>
 						  </h2>
-						  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+						  <div id="panelsStayOpen-collapseThree" class="accordion-collapse" aria-labelledby="panelsStayOpen-headingThree">
 							<div class="accordion-body">
 							  <strong>これは3番目のアイテムのアコーディオン本体。</strong>...
 							</div>
@@ -117,7 +118,7 @@
 		<div class="tab-content" id="nav-tabContent">
 			<div class="tab-pane active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
 
-			  <p>これは、<u class="offcanvas-on" id="bt1" data-bs-toggle="collapse" href="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">日本</u>の千葉県です</p>
+			  <p>これは、<u class="offcanvas-on" id="bt1" data-bs-toggle="collapse" href="#accordion-body_1"  aria-controls="accordion-body_1">日本</u>の千葉県です</p>
 
 			</div>
 			<div class="tab-pane" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
