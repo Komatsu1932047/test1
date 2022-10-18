@@ -1,6 +1,5 @@
 //右部Offcanvas
 document.querySelector('.offcanvas-on').onclick = function () {
-  //event.preventDefault()
   new bootstrap.Offcanvas('#exampleOffcanvas').show();
 };
 //下部タブの操作
