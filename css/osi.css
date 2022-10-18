@@ -6,3 +6,60 @@
 .rect_1 {
     fill: #fff1bf;
 }
+#layer4 {
+    display:block;
+    width:30%;
+    margin:0 auto;
+    opacity:100;
+}
+#layer3{
+    display:block;
+    width:30%;
+    margin:0 auto;
+}
+#layer2{
+    display:block;
+    width:30%;
+    margin:0 auto;
+}
+#layer1{
+    display:block;
+    width:30%;
+    margin:0 auto;
+}
+#next{
+    position: absolute;
+}
+#back{
+    position: absolute;
+}
+.visibility-hidden{
+    visibility:hidden;
+   }
+.opacity{ /*透明度変わる*/
+    animation:layer4 1s infinite ease-in-out;
+}
+/*キーフレーム。*/
+@keyframes layer4 {
+
+    0% {
+    
+    opacity:0.8;
+    }
+    
+    
+    50% {
+    
+    opacity:0.4;
+    }
+    
+    
+    100% {
+    
+    opacity:0.8;
+    }
+    
+}   
+.nav-tabs{
+    margin-top: 30px;
+}

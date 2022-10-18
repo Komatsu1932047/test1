@@ -1,7 +1,3 @@
-window.onload = function () {
-	// 要素を取得
-	var app = Snap.select("#b");
-};
 //右部Offcanvas
 document.querySelector('.offcanvas-on').onclick = function () {
   new bootstrap.Offcanvas('#exampleOffcanvas').show();
