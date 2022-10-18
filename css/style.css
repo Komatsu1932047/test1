@@ -1,4 +1,7 @@
-svg {
-	margin-top:20px;
-    display: inline-block;
-}
+
+#layer5{
+    fill: #e1ffc9;
+    display:block;
+    width:40%;
+    margin:0 auto;
+ }
