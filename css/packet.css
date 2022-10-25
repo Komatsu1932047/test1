@@ -1,0 +1,28 @@
+
+#back1{
+    fill: #e1ffc9;
+    display:block;
+    width:1200px;
+    margin:0 auto;
+    position: relative;
+ }
+ .main-item{
+    position: absolute;
+ }
+#ya_1{
+    width:30%;
+    top:350px;
+    left: 50%;
+ }
+ #next{
+     
+}
+#back{
+    
+}
+.visibility-hidden{
+    visibility:hidden;
+}
+.dispalay-none{
+    display:none;
+}
