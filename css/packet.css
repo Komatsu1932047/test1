@@ -1,11 +1,11 @@
 .main{
     position: relative;
-    width:1200px;
+    width:1150px;
 }
 #back1{
     fill: #e1ffc9;
     display:block;
-    width:1200px;
+    width:1150px;
     margin:0 auto;
  }
 
@@ -21,9 +21,27 @@
 #back{
     
 }
-.visibility-hidden{
+.hidden{
     visibility:hidden;
 }
-.dispalay-none{
+.none{
     display:none;
 }
+.opacity{ /*透明度変わる*/
+    animation:opacity 1s infinite ease-in-out;
+}
+/*キーフレーム。*/
+@keyframes opacity {
+
+    0% {
+    opacity:0.9;
+    }
+    50% {
+    opacity:0.6;
+    }
+    100% {
+    
+    opacity:0.9;
+    }
+    
+}   

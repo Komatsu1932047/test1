@@ -1,3 +1,33 @@
+//main部分
+flag = 0 ;
+const ya = document.querySelectorAll('.ya');
+function back(){
+    console.log(flag);
+    if(flag > 0){
+        flag--;
+    }
+    mainEvent(flag);
+}
+function next(){
+    console.log(flag);
+    if(flag < 10){
+        flag++;
+    }
+    mainEvent(flag);
+}
+function mainEvent(f){
+    switch(f){
+        case 0:
+            ya[0].classList.add("none");
+            ya[0].classList.remove("opacity");
+            break;
+        case 1:
+            ya[0].classList.remove("none");
+            ya[0].classList.add("opacity");
+            break;
+    }
+
+}
 //右部Offcanvas
 document.querySelector('.offcanvas-on').onclick = function () {
     new bootstrap.Offcanvas('#exampleOffcanvas').show();
@@ -11,4 +41,3 @@ document.querySelector('.offcanvas-on').onclick = function () {
       tabTrigger.show()
     })
   })
-  
