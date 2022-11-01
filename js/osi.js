@@ -1,6 +1,6 @@
 //右部Offcanvas
 document.querySelector('.offcanvas-on').onclick = function () {
-  new bootstrap.Offcanvas('#exampleOffcanvas').show();
+  new bootstrap.Offcanvas('#Offcanvas_1').toggle();
 };
 //下部タブの操作
 const triggerTabList = document.querySelectorAll('#myTab button')
