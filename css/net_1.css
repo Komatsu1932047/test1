@@ -1,19 +1,28 @@
 .main{
     position: relative;
-    width:1150px;
+    width:1100px;
 }
-#back{
-    fill: #e1ffc9;
-    display:block;
-    width:1150px;
-    margin:0 auto;
- }
-
- #ya_1{
+.layer_1{
     position: absolute;
-    width:6%;
-    top:48%;
-    left:26%;
+}
+#ya_1{ 
+    width: 100px;
+    top:35%;
+    left:40%;
+ }
+#stand{
+    width: 1100px;
+    top:0%;
+    left:0%;
+ }
+#network_1{
+    top:50%;
+    width: 1100px;
+ }
+#internet_1{
+    width: 600px;
+    top:62%;
+    left:470px;
  }
 #next{
      

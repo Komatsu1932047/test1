@@ -5,12 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1"><!-- デバイスの画面幅に合わせる -->
 		<title>osi</title>
-
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/net_1.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet" defer>
+		<link href="css/net_1.css" rel="stylesheet" defer>
 		<script src="js/bootstrap.bundle.min.js" defer></script>
 		<script src="js/net_1.js" defer></script>
-		<script src="js/snap.svg-min.js"defer></script>
 		<script src="js/anim.js"defer></script>
     </head>
 	<body>
@@ -28,7 +26,7 @@
 				</ul>
 				<ul class="navbar-nav">
 					<li class="nav-item dropdown">
-						<a href="#" class="nav-link dropdown-toggle border-start border-end" role="button" data-bs-toggle="dropdown" aria-expanded="false">ネットワークの基礎知識</a>
+						<a href="#" class="nav-link dropdown-toggle border-start border-end border-secondary" role="button" data-bs-toggle="dropdown" aria-expanded="false">　ネットワークの基礎知識　</a>
 						<ul class="dropdown-menu">
 						  <li><a class="dropdown-item" href="#">ネットワークとは</a></li>
 						  <li><a class="dropdown-item" href="#">その2</a></li>
@@ -38,7 +36,7 @@
 				</ul>
 				<ul class="navbar-nav">
 					<li class="nav-item dropdown">
-						<a href="#" class="nav-link dropdown-toggle border-start border-end" role="button" data-bs-toggle="dropdown" aria-expanded="false">TCP/IPの基礎知識</a>
+						<a href="#" class="nav-link dropdown-toggle border-start border-end border-secondary" role="button" data-bs-toggle="dropdown" aria-expanded="false">　TCP/IPの基礎知識　</a>
 						<ul class="dropdown-menu">
 							<li><a class="dropdown-item" href="#">その1</a></li>
 							<li><a class="dropdown-item" href="#">その2</a></li>
@@ -55,12 +53,24 @@
 			</div>
 		</nav>
 		<!-- ここ に 中央コンテンツ を 入れる -->
+        <nav aria-label="パンくずリスト">
+            <ol class="breadcrumb mb-1">
+              <li class="breadcrumb-item"><a class="ms-3" href="index.html">ホーム</a></li>
+              <li class="breadcrumb-item"><p class="ms-3">ネットワークの基礎知識</p></li>
+              <li class="breadcrumb-item active" aria-current="page">ネットワークとは</li>
+            </ol>
+        </nav>
 		<div class="main">
-			<img id="back" class="layer1" src="img/back.svg" >
-			<button type="button"  id="back_" onclick = "back()">戻る</button>
-			<button type="button"  id="next_" onclick = "next()">進む</button>
-		</div>
-		<!-- オフキャンバス -->
+            <img id="back_1" class="layer" src="img/back.svg" >
+                <img id="stand" class="layer_1" src="img/stand.svg" >
+                <img id="ya_1" class="ya layer_1" src="img/ya_ore.svg" >
+                <img id="network_1" class="layer_1" src="img/network_1.svg" >
+                <img id="internet_1" class="layer_1" src="img/internet_1.svg" >
+        <button type="button"  id="back_" onclick = "back()">戻る</button>
+		<button type="button"  id="next_" onclick = "next()">進む</button>	
+        <p>これは、３個目</p>
+		</div>	
+        <!-- オフキャンバス -->
 			<div class="offcanvas offcanvas-end" data-bs-backdrop="false" tabindex="-1" id="Offcanvas_1" aria-labelledby="exampleOffcanvasLabel">
 				<div class="offcanvas-header">
 					<h5 class="offcanvas-title" id="exampleOffcanvasLabel">用語解説</h5>
@@ -74,12 +84,12 @@
 						<div class="accordion-item">
 						  <h2 class="accordion-header" id="accordion-header_1">
 							<button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion-body_1" aria-expanded="false" aria-controls="accordion-body_1">
-								<strong>TCP/IPモデル</strong>
+								<strong>スタンドアロン</strong>
 							</button>
 						  </h2>
 						  <div id="accordion-body_1" class="accordion-collapse collapse" aria-labelledby="accordion-header_1">
 							<div class="accordion-body">
-							  通信プロトコルのセット
+                                コンピュータや情報機器が、ネットワークや他の機器に接続しないで、単独で動作している環境を意味する。もともとは「孤立」を意味する語。
 							</div>
 						  </div>
 						</div>
@@ -123,7 +133,10 @@
 		<!-- パネル部分 -->
 		<div class="tab-content " id="nav-tabContent">
 			<div class="tab-pane active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-
+                <p>　コンピュータが誕生した頃、コンピュータは他のコンピュータと接続しない形態で利用していました。この形態を<u class="offcanvas-on" id="bt1" data-bs-toggle="collapse" href="#accordion-body_1"  aria-controls="accordion-body_1">スタンドアロン</u>
+                    と言います。<br>コンピュータの進化につれて、コンピュータは相互に接続し利用されるようになります。</p>
+                <p>　複数台のコンピュータをケーブルや電波などで接続して、相互に通信する仕組みを<u class="offcanvas-on" id="bt2" data-bs-toggle="collapse" href="#accordion-body_2"  aria-controls="accordion-body_2">ネットワーク</u>
+                    と言います。</p>
 			  <p>これは、<u class="offcanvas-on" id="bt1" data-bs-toggle="collapse" href="#accordion-body_1"  aria-controls="accordion-body_1">TCP/IPモデル</u>です</p>
 
 			</div>
