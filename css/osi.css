@@ -1,7 +1,14 @@
-
-.rect_1 {
-    fill: #fff1bf;
+.main{
+    position: relative;
+    width:1150px;
 }
+#back{
+    fill: #e1ffc9;
+    display:block;
+    width:1150px;
+    margin:0 auto;
+ }
+
 #layer4 {
     display:block;
     width:30%;
