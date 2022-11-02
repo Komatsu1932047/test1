@@ -28,10 +28,12 @@ function mainEvent(f){
     }
 
 }
+//lanwan,
 //右部Offcanvas
-document.querySelector('.offcanvas-on').onclick = function () {
-    new bootstrap.Offcanvas('#Offcanvas_1').toggle();
-  };
+const bsOffcanvas = new bootstrap.Offcanvas('#Offcanvas_1');
+function canvasOn() {
+  bsOffcanvas.show();
+};
   //下部タブの操作
   const triggerTabList = document.querySelectorAll('#myTab button')
   triggerTabList.forEach(triggerEl => {
