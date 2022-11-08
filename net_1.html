@@ -121,29 +121,26 @@
 			</div>
 
 		<!-- 下部解説タブ -->
-		<nav>
+		<!-- <nav>
 			<div class="nav nav-tabs" id="nav-tab" role="tablist">
-			  <button type="button" class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">1</button>
-			  <button type="button" class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">2</button>
-			  <button type="button" class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">3</button>
+			  <button type="button" class="nav-link active d_tab" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">1</button>
+			  <button type="button" class="nav-link d_tab" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">2</button>
+			  <button type="button" class="nav-link d_tab" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">3</button>
 			</div>
 		</nav>
-
+		-->
 		<!-- パネル部分 -->
 		<div class="tab-content " id="nav-tabContent">
-			<div class="tab-pane active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+			<div class="tab-pane active" id="tab-1" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
                 <p><span class="space"></span>コンピュータが誕生した頃、コンピュータは他のコンピュータと接続しない形態で利用していました。この形態を<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_1"  aria-controls="accordion-body_1" onclick = "canvasOn()">スタンドアロン</u>
-                    と言います。<br>コンピュータの進化につれて、コンピュータは相互に接続し利用されるようになります。</p>
-                <p><span class="space"></span>複数台のコンピュータをケーブルや電波などで接続して、相互に通信する仕組みを<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_2"  aria-controls="accordion-body_2" onclick = "canvasOn()">ネットワーク</u>
                     と言います。</p>
-			  
-
 			</div>
-			<div class="tab-pane" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-			  <p>これは、２個目の解説文</p>
+			<div class="tab-pane" id="tab-2" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+			  <p><span class="space"></span>コンピュータの進化につれて、コンピュータは相互に接続し利用されるようになります。</p>
 			</div>
-			<div class="tab-pane " id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-			  <p>これは、３個目</p>
+			<div class="tab-pane " id="tab-3" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+				<p><span class="space"></span>複数台のコンピュータをケーブルや電波などで接続して、相互に通信する仕組みを<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_2"  aria-controls="accordion-body_2" onclick = "canvasOn()">ネットワーク</u>
+                    と言います。</p>
 			</div>
 		</div>
 	</body>

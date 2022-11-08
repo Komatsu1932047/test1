@@ -1,4 +1,4 @@
-//main部分
+
 let flag = 0 ;
 let imgList = ["img/net_1/back_0.svg", "img/net_1/back_1.svg", "img/net_1/back_2.svg", "img/net_1/back_3.svg", "img/net_1/back_4.svg"];
 let num = 0;
@@ -24,6 +24,9 @@ function reset(){
 function imageUpdate(){
   document.querySelector('#back').src = imgList[num];
 }
+function tabShow(t){
+  tab[t].classList.add("active");
+}
 function mainEvent(f){
     switch(f){
         case 0:
@@ -32,11 +35,13 @@ function mainEvent(f){
           break;
         case 1:
           num=1;
+          tabShow(1);
           imageUpdate();
           num=2;
           setTimeout(imageUpdate, 300);
           break;
         case 2:
+          tabShow(2);
           num=3;
           imageUpdate();
           num=4;
@@ -51,11 +56,12 @@ function canvasOn() {
   bsOffcanvas.show();
 };
   //下部タブの操作
-  const triggerTabList = document.querySelectorAll('#myTab button')
+  const triggerTabList = document.querySelectorAll('#myTab button');
+  let tab=document.querySelectorAll('.tab-pane');
   triggerTabList.forEach(triggerEl => {
     const tabTrigger = new bootstrap.Tab(triggerEl)
     triggerEl.addEventListener('click', event => {
-      event.preventDefault()
-      tabTrigger.show()
+      event.preventDefault();
+      tabTrigger.show();
     })
 })
