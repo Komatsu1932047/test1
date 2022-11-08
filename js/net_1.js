@@ -1,30 +1,34 @@
 //main部分
-flag = 0 ;
-const ya = document.querySelectorAll('.ya');
+let flag = 0 ;
+let imgList = ["img/net_1/back_0.svg", "img/net_1/back_1.svg", "img/net_1/back_2.svg", "img/net_1/back_3.svg", "img/net_1/back_4.svg"];
+
 function back(){
-    console.log(flag);
     if(flag > 0){
         flag--;
     }
+    console.log(flag);
     mainEvent(flag);
 }
 function next(){
-    console.log(flag);
     if(flag < 10){
         flag++;
     }
+    console.log(flag);
     mainEvent(flag);
+}
+function reset(){
+  flag=0;
+  console.log(flag);
+  mainEvent(flag);
 }
 function mainEvent(f){
     switch(f){
         case 0:
-            ya[0].classList.add("none");
-            ya[0].classList.remove("opacity");
+          document.querySelector('#back').src = imgList[0];
             break;
         case 1:
-            ya[0].classList.remove("none");
-            ya[0].classList.add("opacity");
-            break;
+          document.querySelector('#back').src = imgList[1];
+          break;
     }
 
 }
