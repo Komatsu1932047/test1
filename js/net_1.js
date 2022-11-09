@@ -21,6 +21,11 @@ function reset(){
   console.log(flag);
   mainEvent(flag);
 }
+function end(){
+  flag=2;
+  console.log(flag);
+  mainEvent(flag);
+}
 function imageUpdate(n){
   document.querySelector('#back').src = imgList[n];
 }
