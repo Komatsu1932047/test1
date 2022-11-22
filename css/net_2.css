@@ -8,26 +8,9 @@
 .layer{
     width: 60%;
 }
-#ya_1{ 
-    width: 100px;
-    top:35%;
-    left:40%;
- }
-#stand{
-    width: 1100px;
-    top:0%;
-    left:0%;
- }
-#network_1{
-    top:50%;
-    width: 1100px;
-    left:0px;
- }
-#internet_1{
-    width: 600px;
-    top:62%;
-    left:470px;
- }
+.tab-content{
+    width: 60%;
+}
 #next{
      
 }
