@@ -34,7 +34,8 @@ function imageUpdate(n){
 function animUpdate(n){
   document.querySelector('#anim').src = animList[n];
   let anim=document.querySelector('#anim');
-  anim.classList.add("animate__animated", "animate__bounce");
+  anim.classList.add("opacity");
+  setTimeout(function(){ anim.classList.remove("opacity");}, 2000);
   //jquery
 
 }
