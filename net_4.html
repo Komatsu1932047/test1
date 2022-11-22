@@ -6,9 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1"><!-- デバイスの画面幅に合わせる -->
 		<title>osi</title>
 		<link href="css/bootstrap.min.css" rel="stylesheet" defer>
-		<link href="css/net_3.css" rel="stylesheet" defer>
+		<link href="css/net_4.css" rel="stylesheet" defer>
 		<script src="js/bootstrap.bundle.min.js" defer></script>
-		<script src="js/net_3.js" defer></script>
+		<script src="js/net_4.js" defer></script>
     </head>
 	<body>
 		<!-- 上部ナビゲーションタブ -->
@@ -30,7 +30,7 @@
 						  <li><a class="dropdown-item" href="net_1.html">TCP/IPとOSI参照モデル</a></li>
 						  <li><a class="dropdown-item" href="net_2.html">ヘッダの役割</a></li>
 						  <li><a class="dropdown-item" href="net_3.html">パケットの構造</a></li>
-						  <li><a class="dropdown-item" href="net_4.html">ネットワーク層とデータリンク層の違い</a></li>
+						  <li><a class="dropdown-item" href="#">ネットワーク層とデータリンク層の違い</a></li>
 						</ul>
 				</ul>
 				<ul class="navbar-nav">
@@ -50,20 +50,18 @@
             <ol class="breadcrumb mb-1">
               <li class="breadcrumb-item"><a class="ms-3" href="index.html">ホーム</a></li>
               <li class="breadcrumb-item"><p class="ms-3">パケット通信の基礎知識</p></li>
-              <li class="breadcrumb-item active" aria-current="page">パケットの構造</li>
+              <li class="breadcrumb-item active" aria-current="page">ネットワーク層とデータリンク層の違い</li>
             </ol>
         </nav>
 		<!-- メイン部分-->
 		<div class="main">
 			<img id="anim" class="layer" src="img/net_2/0.svg">
-            <img id="back" class="layer" src="img/net_3/3-1.svg">
+            <img id="back" class="layer" src="img/net_4/4.svg">
 			
 		</div>	
 		<button type="button"  id="back_" onclick = "back()">戻る</button>
 		<button type="button"  id="next_" onclick = "next()">進む</button>
-		<button type="button"  id="layer_0" onclick = "mainEvent(0)">パケットの概略図</button>
-		<button type="button"  id="layer_1" onclick = "mainEvent(1)">イーサネットヘッダの詳細</button>
-		<button type="button"  id="layer_2" onclick = "mainEvent(2)">IPヘッダの詳細</button>
+		<button type="button"  id="layer_0" onclick = "mainEvent(0)">1</button>
 		
         <!-- オフキャンバス -->
 			<div class="offcanvas offcanvas-end" data-bs-backdrop="false" tabindex="-1" id="Offcanvas_1" aria-labelledby="exampleOffcanvasLabel">
