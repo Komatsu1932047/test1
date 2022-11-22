@@ -10,7 +10,7 @@ function back(){
     mainEvent(flag);
 }
 function next(){
-    if(flag < 8){
+    if(flag < 7){
         flag++;
     }
     console.log(flag);
@@ -22,7 +22,7 @@ function reset(){
   mainEvent(flag);
 }
 function end(){
-  flag=8;
+  flag=7;
   console.log(flag);
   mainEvent(flag);
 }
@@ -33,6 +33,7 @@ function tabShow(t){
   tab[t].classList.add("active");
 }
 function mainEvent(f){
+    flag=f;
     switch(f){
         case 0:
           imageUpdate(0);
