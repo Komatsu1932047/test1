@@ -35,7 +35,7 @@ function animUpdate(n){
   document.querySelector('#anim').src = animList[n];
   let anim=document.querySelector('#anim');
   anim.classList.add("opacity");
-  setTimeout(function(){ anim.classList.remove("opacity");}, 2000);
+  setTimeout(function(){ anim.classList.remove("opacity");}, 1000);
   //jquery
 
 }
