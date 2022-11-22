@@ -1,6 +1,8 @@
 
 let flag = 0 ;
-let imgList = ["img/net_2/2-1.svg", "img/net_2/2-2-1.svg", "img/net_2/2-2-2.svg", "img/net_2/2-3-1.svg", "img/net_2/2-3-2.svg", "img/net_2/2-4-1.svg", "img/net_2/2-4-2.svg", "img/net_2/2-5-1.svg", "img/net_2/2-5-2.svg", "img/net_2/2-6-1.svg", "img/net_2/2-6-2.svg", "img/net_2/2-7-1.svg", "img/net_2/2-7-2.svg", "img/net_2/2-8.svg"];
+let imgList = ["img/net_2/2-1.svg", "img/net_2/2-2-1.svg", "img/net_2/2-3-1.svg","img/net_2/2-4-1.svg", "img/net_2/2-5-1.svg", "img/net_2/2-6-1.svg", "img/net_2/2-7-1.svg", "img/net_2/2-8.svg"];
+//let imgList = ["img/net_2/2-1.svg", "img/net_2/2-2-1.svg", "img/net_2/2-2-2.svg", "img/net_2/2-3-1.svg", "img/net_2/2-3-2.svg", "img/net_2/2-4-1.svg", "img/net_2/2-4-2.svg", "img/net_2/2-5-1.svg", "img/net_2/2-5-2.svg", "img/net_2/2-6-1.svg", "img/net_2/2-6-2.svg", "img/net_2/2-7-1.svg", "img/net_2/2-7-2.svg", "img/net_2/2-8.svg"];
+let animList = ["img/net_2/0.svg", "img/net_2/1.svg", "img/net_2/2.svg", "img/net_2/3.svg", "img/net_2/4.svg", "img/net_2/5.svg", "img/net_2/6.svg", ]
 let time = 500;
 function back(){
     if(flag > 0){
@@ -29,6 +31,13 @@ function end(){
 function imageUpdate(n){
   document.querySelector('#back').src = imgList[n];
 }
+function animUpdate(n){
+  document.querySelector('#anim').src = animList[n];
+  let anim=document.querySelector('#anim');
+  anim.classList.add("animate__animated", "animate__bounce");
+  //jquery
+
+}
 function tabShow(t){
   tab.forEach(array=> {
     array.classList.remove("active");
@@ -40,41 +49,43 @@ function mainEvent(f){
     switch(f){
         case 0:
           imageUpdate(0);
+          animUpdate(0);
           tabShow(f);
           break;
         case 1:
           tabShow(f);
           imageUpdate(1);
-          setTimeout(imageUpdate, time, 2);
+          animUpdate(1);
           break;
         case 2:
           tabShow(f);
-          imageUpdate(3);
-          setTimeout(imageUpdate, time, 4);
+          imageUpdate(2);
+          animUpdate(2);
           break;
         case 3:
           tabShow(f);
-          imageUpdate(5);
-          setTimeout(imageUpdate, time, 6);
+          imageUpdate(3);
+          animUpdate(3);
           break;
         case 4:
           tabShow(f);
-          imageUpdate(7);
-          setTimeout(imageUpdate, time, 8);
+          imageUpdate(4);
+          animUpdate(4);
           break;
         case 5:
           tabShow(f);
-          imageUpdate(9);
-          setTimeout(imageUpdate, time, 10);
+          imageUpdate(5);
+          animUpdate(5);
           break;
         case 6:
           tabShow(f);
-          imageUpdate(11);
-          setTimeout(imageUpdate, time, 12);
+          imageUpdate(6);
+          animUpdate(6);
           break;
         case 7:
           tabShow(f);
-          imageUpdate(13);
+          imageUpdate(7);
+          animUpdate(0);
           break;
     }
 }

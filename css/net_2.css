@@ -2,17 +2,18 @@
     margin-right : 20px;
 }
 .main{
-    position: relative;
+    
     
 }
 .layer{
+    
     width: 60%;
 }
 .tab-content{
     width: 550px;
 }
-#next{
-     
+#anim{
+     position: absolute;
 }
 #back{
     
