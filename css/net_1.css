@@ -5,8 +5,8 @@
     position: relative;
     
 }
-.layer_1{
-    position: absolute;
+.layer{
+    width: 80%;
 }
 #ya_1{ 
     width: 100px;
