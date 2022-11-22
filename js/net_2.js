@@ -1,6 +1,6 @@
 
 let flag = 0 ;
-let imgList = ["img/net_2/2-1.svg", "img/net_2/2-2.svg", "img/net_2/2-3.svg", "img/net_2/2-4.svg", "img/net_2/2-5.svg", "img/net_2/2-6.svg", "img/net_2/2-7.svg", "img/net_2/2-8.svg"];
+let imgList = ["img/net_2/2-1.svg", "img/net_2/2-2-1.svg", "img/net_2/2-2-2.svg", "img/net_2/2-3-1.svg", "img/net_2/2-3-2.svg", "img/net_2/2-4-1.svg", "img/net_2/2-4-2.svg", "img/net_2/2-5-1.svg", "img/net_2/2-5-2.svg", "img/net_2/2-6-1.svg", "img/net_2/2-6-2.svg", "img/net_2/2-7-1.svg", "img/net_2/2-7-2.svg", "img/net_2/2-8.svg"];
 //let num = 0;
 function back(){
     if(flag > 0){
@@ -45,32 +45,36 @@ function mainEvent(f){
         case 1:
           tabShow(f);
           imageUpdate(1);
-          //setTimeout(imageUpdate, 300, 2);
+          setTimeout(imageUpdate, 300, 2);
           break;
         case 2:
           tabShow(f);
-          imageUpdate(2);
-          //setTimeout(imageUpdate, 300, 4);
+          imageUpdate(3);
+          setTimeout(imageUpdate, 300, 4);
           break;
         case 3:
           tabShow(f);
-          imageUpdate(3);
+          imageUpdate(5);
+          setTimeout(imageUpdate, 300, 6);
           break;
         case 4:
           tabShow(f);
-          imageUpdate(4);
+          imageUpdate(7);
+          setTimeout(imageUpdate, 300, 8);
           break;
         case 5:
           tabShow(f);
-          imageUpdate(5);
+          imageUpdate(9);
+          setTimeout(imageUpdate, 300, 10);
           break;
         case 6:
           tabShow(f);
-          imageUpdate(6);
+          imageUpdate(11);
+          setTimeout(imageUpdate, 300, 12);
           break;
         case 7:
           tabShow(f);
-          imageUpdate(7);
+          imageUpdate(13);
           break;
     }
 }
