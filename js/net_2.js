@@ -30,6 +30,9 @@ function imageUpdate(n){
   document.querySelector('#back').src = imgList[n];
 }
 function tabShow(t){
+  tab.forEach(array=> {
+    array.classList.remove("active");
+  }); 
   tab[t].classList.add("active");
 }
 function mainEvent(f){
@@ -37,30 +40,36 @@ function mainEvent(f){
     switch(f){
         case 0:
           imageUpdate(0);
+          tabShow(f);
           break;
         case 1:
-          tabShow(1);
+          tabShow(f);
           imageUpdate(1);
           //setTimeout(imageUpdate, 300, 2);
           break;
         case 2:
-          tabShow(2);
+          tabShow(f);
           imageUpdate(2);
           //setTimeout(imageUpdate, 300, 4);
           break;
         case 3:
-            imageUpdate(3);
-            break;
+          tabShow(f);
+          imageUpdate(3);
+          break;
         case 4:
+          tabShow(f);
           imageUpdate(4);
           break;
         case 5:
+          tabShow(f);
           imageUpdate(5);
           break;
         case 6:
+          tabShow(f);
           imageUpdate(6);
           break;
         case 7:
+          tabShow(f);
           imageUpdate(7);
           break;
     }
@@ -74,10 +83,10 @@ function canvasOn() {
   //下部タブの操作
   const triggerTabList = document.querySelectorAll('#myTab button');
   let tab=document.querySelectorAll('.tab-pane');
-  triggerTabList.forEach(triggerEl => {
-    const tabTrigger = new bootstrap.Tab(triggerEl)
-    triggerEl.addEventListener('click', event => {
-      event.preventDefault();
-      tabTrigger.show();
-    })
-})
+  //triggerTabList.forEach(triggerEl => {
+    //const tabTrigger = new bootstrap.Tab(triggerEl)
+    //.addEventListener('click', event => {
+      //event.preventDefault();
+      //tabTrigger.show();
+    //})
+//})
