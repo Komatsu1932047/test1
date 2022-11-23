@@ -11,7 +11,7 @@ function back(){
     mainEvent(flag);
 }
 function next(){
-    if(flag < 3){
+    if(flag < 0){
         flag++;
     }
     console.log(flag);
