@@ -1,6 +1,6 @@
 
 let flag = 0 ;
-let imgList = ["img/net_4/4.svg", "img/net_3/3-2.svg", "img/net_3/3-3.svg"];
+let imgList = ["img/net_4/4-1.svg", "img/net_4/4-2.svg", "img/net_4/4-3.svg", "img/net_4/4-4.svg", "img/net_4/4.svg"];
 let animList = ["img/net_2/0.svg", "img/net_2/1.svg", "img/net_2/2.svg", "img/net_2/3.svg", "img/net_2/4.svg", "img/net_2/5.svg", "img/net_2/6.svg", ]
 let time = 500;
 function back(){
@@ -11,7 +11,7 @@ function back(){
     mainEvent(flag);
 }
 function next(){
-    if(flag < 0){
+    if(flag < 3){
         flag++;
     }
     console.log(flag);
@@ -60,6 +60,11 @@ function mainEvent(f){
           tabShow(f);
           imageUpdate(2);
           //animUpdate(2);
+          break;
+        case 3:
+            tabShow(f);
+            imageUpdate(3);
+            //animUpdate(2);
           break;
     }
 }
