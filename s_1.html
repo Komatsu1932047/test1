@@ -57,15 +57,12 @@
 		<div class="main">
 			<img id="anim" class="layer" src="img/net_2/0.svg">
             <img id="back" class="layer" src="img/s_1/n-1.svg">
-			<button type="button"  id="bac">設定用</button>
-			<input type="text" id="name" name="name" required
-       minlength="4" maxlength="8" size="10">
 	   
 			
 		</div>	
 		<button type="button"  id="back_" onclick = "back()">戻る</button>
 		<button type="button"  id="next_" onclick = "next()">進む</button>
-		<button type="button"  id="layer_0" onclick = "mainEvent(0)">1</button>
+		<button type="button"  id="layer_0" onclick = "mainEvent(0)">使い方</button>
 		
         <!-- オフキャンバス -->
 			<div class="offcanvas offcanvas-end" data-bs-backdrop="false" tabindex="-1" id="Offcanvas_1" aria-labelledby="exampleOffcanvasLabel">
@@ -86,7 +83,7 @@
 						  </h2>
 						  <div id="accordion-body_1" class="accordion-collapse collapse" aria-labelledby="accordion-header_1">
 							<div class="accordion-body">
-                                コンピュータや情報機器が、ネットワークや他の機器に接続しないで、単独で動作している環境を意味する。
+                                IPアドレスは数字で三桁ずつで設定してください
 							</div>
 						  </div>
 						</div>
@@ -114,7 +111,7 @@
 						  </h2>
 						  <div id="accordion-body_2" class="accordion-collapse collapse" aria-labelledby="accordion-header_2">
 							<div class="accordion-body">
-							  ネットワークの説明
+								MACアドレスは1~9の数字かA~F、a~fのアルファベット二桁ずつで設定してください
 							</div>
 						  </div>
 						</div>
@@ -164,7 +161,7 @@
 							</h2>
 							<div id="accordion-body_3" class="accordion-collapse collapse" aria-labelledby="accordion-header_3">
 							  <div class="accordion-body">
-								  コンピュータや情報機器が、ネットワークや他の機器に接続しないで、単独で動作している環境を意味する。
+								  イーサネット(有線LAN)かIEEE802.11(無線LAN)かを選択して下さい
 							  </div>
 							</div>
 						</div>
@@ -189,11 +186,11 @@
 						<p></p>
 						<button type="button"  id="start" >開始</button>
 					</div>
-					<div><h5><p></p>IPアドレスの設定</h5></div>
+					<!--<div><h5><p></p>IPアドレスの設定</h5></div>
 					
 					
 					
-					<div><p></p><h5>MACアドレスの設定</h5></div>
+					<div><p></p><h5>MACアドレスの設定</h5></div> -->
 					
 					
 						
