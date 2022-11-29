@@ -81,7 +81,7 @@
 						<div class="accordion-item">
 						  <h2 class="accordion-header" id="accordion-header_1">
 							<button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion-body_1" aria-expanded="false" aria-controls="accordion-body_1">
-								<strong>スタンドアロン</strong>
+								<strong>IPアドレスの設定</strong>
 							</button>
 						  </h2>
 						  <div id="accordion-body_1" class="accordion-collapse collapse" aria-labelledby="accordion-header_1">
@@ -90,10 +90,24 @@
 							</div>
 						  </div>
 						</div>
+						<label>・ホストAのIPアドレス</label>
+						<div>
+							<input type="text" maxlength="3" inputmode="numeric" oninput="value = value.replace(/[^0-9]+/i,'');" / value="192" id="ip1-1" class="IP1"></input>.
+							<input type="tel" maxlength="3" inputmode="numeric" oninput="value = value.replace(/[^0-9]+/i,'');" / value="168" id="ip1-2" class="IP1"></input>.
+							<input type="tel" maxlength="3" inputmode="numeric" oninput="value = value.replace(/[^0-9]+/i,'');" / value="128" id="ip1-3" class="IP1"></input>.
+							<input type="tel" maxlength="3" inputmode="numeric" oninput="value = value.replace(/[^0-9]+/i,'');" / value="10" id="ip1-4" class="IP1"></input>
+						</div>
+						<label>・ホストBのIPアドレス</label>
+						<div>
+							<input type="tel" maxlength="3" inputmode="numeric" oninput="value = value.replace(/[^0-9]+/i,'');" / value="192" id="ip2-1" class="IP2"></input>.
+							<input type="tel" maxlength="3" inputmode="numeric" oninput="value = value.replace(/[^0-9]+/i,'');" / value="168" id="ip2-2" class="IP2"></input>.
+							<input type="tel" maxlength="3" inputmode="numeric" oninput="value = value.replace(/[^0-9]+/i,'');" / value="144" id="ip2-3" class="IP2"></input>.
+							<input type="tel" maxlength="3" inputmode="numeric" oninput="value = value.replace(/[^0-9]+/i,'');" / value="12" id="ip2-4" class="IP2"></input>
+						</div>
 						<div class="accordion-item">
 						  <h2 class="accordion-header" id="accordion-header_2">
 							<button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-body_2" aria-expanded="false" aria-controls="accordion-body_2">
-								<strong>ネットワーク</strong>
+								<strong>MACアドレスの設定</strong>
 							</button>
 						  </h2>
 						  <div id="accordion-body_2" class="accordion-collapse collapse" aria-labelledby="accordion-header_2">
@@ -102,91 +116,56 @@
 							</div>
 						  </div>
 						</div>
-					</div>
-					<div><h5><p></p>IPアドレスの設定</h5></div>
-					<label>・ホストAのIPアドレスを設定</label>
-					<div>
-						<input type="text" maxlength="3" inputmode="numeric" oninput="value = value.replace(/[^0-9]+/i,'');" / value="192" id="ip1-1" class="IP1"></input>
-						.
-						<input type="tel" maxlength="3" inputmode="numeric" oninput="value = value.replace(/[^0-9]+/i,'');" / value="168" id="ip1-2" class="IP1"></input>
-						.
-						<input type="tel" maxlength="3" inputmode="numeric" oninput="value = value.replace(/[^0-9]+/i,'');" / value="128" id="ip1-3" class="IP1"></input>
-						.
-						<input type="tel" maxlength="3" inputmode="numeric" oninput="value = value.replace(/[^0-9]+/i,'');" / value="10" id="ip1-4" class="IP1"></input>
-					</div>
-					<label>・ホストBのIPアドレスを設定</label>
-					<div>
-						<input type="tel" maxlength="3" inputmode="numeric" oninput="value = value.replace(/[^0-9]+/i,'');" / value="192" id="ip2-1" class="IP2"></input>
-						.
-						<input type="tel" maxlength="3" inputmode="numeric" oninput="value = value.replace(/[^0-9]+/i,'');" / value="168" id="ip2-2" class="IP2"></input>
-						.
-						<input type="tel" maxlength="3" inputmode="numeric" oninput="value = value.replace(/[^0-9]+/i,'');" / value="144" id="ip2-3" class="IP2"></input>
-						.
-						<input type="tel" maxlength="3" inputmode="numeric" oninput="value = value.replace(/[^0-9]+/i,'');" / value="12" id="ip2-4" class="IP2"></input>
-					</div>
-					<div><p></p><h5>MACアドレスの設定</h5></div>
-					<label>・ホストAのMACアドレスを設定</label>
-					<div>
-						<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="00" id="mac1-1" class="MAC"></input>
-						:
-						<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="10" id="mac1-2" class="MAC"></input>
-						:
-						<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="5A" id="mac1-3" class="MAC"></input>
-						:
-						<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="12" id="mac1-4" class="MAC"></input>
-						:
-						<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="21" id="mac1-5" class="MAC"></input>
-						:
-						<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="06" id="mac1-6" class="MAC"></input>
-					</div>
-					<label>・ホストBのMACアドレスを設定</label>
-					<div>
-						<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="00" id="mac2-1" class="MAC"></input>
-						:
-						<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="12" id="mac2-2" class="MAC"></input>
-						:
-						<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="2D" id="mac2-3" class="MAC"></input>
-						:
-						<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="02" id="mac2-4" class="MAC"></input>
-						:
-						<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="81" id="mac2-5" class="MAC"></input>
-						:
-						<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="98" id="mac2-6" class="MAC"></input>
-					</div>
-					<label>・ルータAのMACアドレスを設定</label>
-					<div>
-						<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="00" id="mac3-1" class="MAC"></input>
-						:
-						<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="12" id="mac3-2" class="MAC"></input>
-						:
-						<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="2D" id="mac3-3" class="MAC"></input>
-						:
-						<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="02" id="mac3-4" class="MAC"></input>
-						:
-						<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="81" id="mac3-5" class="MAC"></input>
-						:
-						<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="98" id="mac3-6" class="MAC"></input>
-					</div>
-					<label>・ルータBのMACアドレスを設定</label>
-					<div>
-						<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="00" id="mac4-1" class="MAC"></input>
-						:
-						<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="12" id="mac4-2" class="MAC"></input>
-						:
-						<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="2D" id="mac4-3" class="MAC"></input>
-						:
-						<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="02" id="mac4-4" class="MAC"></input>
-						:
-						<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="81" id="mac4-5" class="MAC"></input>
-						:
-						<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="98" id="mac4-6" class="MAC"></input>
-					</div>
+						<label>・ホストAのMACアドレス</label>
+						<div>
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="00" id="mac1-1" class="MAC"></input>:
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="10" id="mac1-2" class="MAC"></input>:
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="5A" id="mac1-3" class="MAC"></input>:
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="12" id="mac1-4" class="MAC"></input>:
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="21" id="mac1-5" class="MAC"></input>:
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="06" id="mac1-6" class="MAC"></input>
+						</div>
+						<label>・ホストBのMACアドレス</label>
+						<div>
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="00" id="mac2-1" class="MAC"></input>:
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="12" id="mac2-2" class="MAC"></input>:
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="2D" id="mac2-3" class="MAC"></input>:
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="02" id="mac2-4" class="MAC"></input>:
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="81" id="mac2-5" class="MAC"></input>:
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="98" id="mac2-6" class="MAC"></input>
+						</div>
+						<label>・ルータAのMACアドレス</label>
+						<div>
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="00" id="mac3-1" class="MAC"></input>:
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="12" id="mac3-2" class="MAC"></input>:
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="2D" id="mac3-3" class="MAC"></input>:
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="02" id="mac3-4" class="MAC"></input>:
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="81" id="mac3-5" class="MAC"></input>:
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="98" id="mac3-6" class="MAC"></input>
+						</div>
+						<label>・ルータBのMACアドレス</label>
+						<div>
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="00" id="mac4-1" class="MAC"></input>:
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="12" id="mac4-2" class="MAC"></input>:
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="2D" id="mac4-3" class="MAC"></input>:
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="02" id="mac4-4" class="MAC"></input>:
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="81" id="mac4-5" class="MAC"></input>:
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="98" id="mac4-6" class="MAC"></input>
+						</div>
 					<form id="input02-form">
 						<input type="radio" value="1" class="input02" name="radio02" checked>1番目の選択肢
 						<input type="radio" value="2" class="input02" name="radio02">2番目の選択肢
 						<input type="radio" value="3" class="input02" name="radio02">3番目の選択肢
 						<input type="radio" value="4" class="input02" name="radio02">4番目の選択肢
 						</form>
+					</div>
+					<div><h5><p></p>IPアドレスの設定</h5></div>
+					
+					<label>・ホストBのIPアドレスを設定</label>
+					
+					<div><p></p><h5>MACアドレスの設定</h5></div>
+					
+					
 						
 				</div>
 			</div>
