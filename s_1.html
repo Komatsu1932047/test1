@@ -156,11 +156,35 @@
 							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="98" id="mac4-6" class="MAC"></input>
 						</div>
 						<p></p>
-						<form id="input02-form">
-							<input type="radio" value="1" class="input02" name="radio02" checked>1番目の選択肢
-							<input type="radio" value="2" class="input02" name="radio02">2番目の選択肢
-							<input type="radio" value="3" class="input02" name="radio02">3番目の選択肢
-							<input type="radio" value="4" class="input02" name="radio02">4番目の選択肢
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="accordion-header_3">
+							  <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion-body_3" aria-expanded="false" aria-controls="accordion-body_3">
+								  <strong>機器間の通信方法の選択</strong>
+							  </button>
+							</h2>
+							<div id="accordion-body_3" class="accordion-collapse collapse" aria-labelledby="accordion-header_3">
+							  <div class="accordion-body">
+								  コンピュータや情報機器が、ネットワークや他の機器に接続しないで、単独で動作している環境を意味する。
+							  </div>
+							</div>
+						</div>
+						<p></p>
+						<label>・ポイントA</label>
+						<form id="cone-form1">
+							<input type="radio" value="1" class="cone1" name="cone1" checked>イーサネット
+							<input type="radio" value="2" class="cone1" name="cone1">IEEE802.11(無線)
+						</form>
+						<p></p>
+						<label>・ポイントB</label>
+						<form id="cone-form1">
+							<input type="radio" value="1" class="cone2" name="cone2" checked>イーサネット
+							<input type="radio" value="2" class="cone2" name="cone2">IEEE802.11(無線)
+						</form>
+						<p></p>
+						<label>・ポイントC</label>
+						<form id="cone-form1">
+							<input type="radio" value="1" class="cone3" name="cone3" checked>イーサネット
+							<input type="radio" value="2" class="cone3" name="cone3">IEEE802.11(無線)
 						</form>
 					</div>
 					<div><h5><p></p>IPアドレスの設定</h5></div>
