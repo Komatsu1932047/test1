@@ -105,7 +105,7 @@
 					</div>
 					<label>ホストAのIPアドレスを設定</label>
 					<div>
-						<input type="tel" maxlength="3" value="192" id="ip1-1" class="IP1"></input>
+						<input type="text" maxlength="3" inputmode="numeric" oninput="value = value.replace(/[^0-9]+/i,'');" / value="192" id="ip1-1" class="IP1"></input>
 						.
 						<input type="tel" maxlength="3" value="168" id="ip1-2" class="IP1"></input>
 						.
@@ -143,6 +143,7 @@
 		</nav>
 		-->
 		<!-- パネル部分 -->
+		
 		<div class="tab-content" id="nav-tabContent">
 			<div class="tab-pane active" id="tab-1" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
                 <p><span class="space"></span>1_説明文ですあああああああああああああああああああああああああああああああああああああああああああああああああ<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_1"  aria-controls="accordion-body_1" onclick = "canvasOn()">スタンドアロン</u>
