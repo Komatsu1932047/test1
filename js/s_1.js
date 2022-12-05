@@ -1,6 +1,6 @@
 
 let flag = 0 ;
-let imgList = ["img/s_1/n-1.svg", "img/net_3/3-2.svg", "img/net_3/3-3.svg"];
+let imgList = ["img/s_1/s1-2.svg", "img/net_3/3-2.svg", "img/net_3/3-3.svg"];
 let animList = ["img/net_2/0.svg", "img/net_2/1.svg", "img/net_2/2.svg", "img/net_2/3.svg", "img/net_2/4.svg", "img/net_2/5.svg", "img/net_2/6.svg", ]
 let time = 500;
 function back(){

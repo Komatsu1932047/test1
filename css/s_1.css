@@ -2,7 +2,7 @@
     margin-right : 20px;
 }
 .obj{
-    
+    top: 550px;
     position: absolute;
 }
 .IP1{
@@ -32,6 +32,13 @@
 }
 #anim{
      position: absolute;
+}
+table {
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px 15px; /* 上下 左右 */
+    border: solid 1px #333; /* 線の種類 太さ 色 */
 }
 #back{
     
