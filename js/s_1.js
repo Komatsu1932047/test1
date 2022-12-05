@@ -63,7 +63,7 @@ function mainEvent(f){
           break;
     }
 }
-//lanwan,
+
 //右部Offcanvas
 const bsOffcanvas = new bootstrap.Offcanvas('#Offcanvas_1');
 function canvasOn() {
