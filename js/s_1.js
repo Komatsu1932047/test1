@@ -17,6 +17,17 @@ function next(){
     console.log(flag);
     mainEvent(flag);
 }
+function start(){
+  const ip1 = document.querySelectorAll('.IP1');
+  const ip2 = document.querySelectorAll('.IP2');
+  
+  var ipa1 = document.querySelector( '#base01' ); // 追加する先の要素を取得
+  ipa1.textContent=ip1[0].value+'.'+ip1[1].value+'.'+ip1[2].value+'.'+ip1[3].value;
+  
+  
+  flag=0;
+  mainEvent(flag);
+}
 function reset(){
   flag=0;
   console.log(flag);
