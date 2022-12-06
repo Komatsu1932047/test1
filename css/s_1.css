@@ -29,10 +29,10 @@
     width: 60%;
 }
 .ip{
-    background: #FFB48A !important;
+    background: #FFB48A ;
 }
 .mac{
-    background: #D4EEFF !important;
+    background: #D4EEFF ;
 }
 .tab-content{
     width: 550px;
@@ -47,11 +47,18 @@ th, td {
     padding: 5px 15px; /* 上下 左右 */
     border: solid 1px #333; /* 線の種類 太さ 色 */
 }
-.ip th, td{
+.ip th{
+    background: #FFB467 !important;
+}
+.ip td{
     background: #FFB48A !important;
 }
-.mac th, td{
+
+.mac th{
     background: #D4EEFF !important;
+}
+.mac td{
+    background: #BCEEFF !important;
 }
 #back{
     
