@@ -78,18 +78,27 @@ function macUpdate(n){
 function imageUpdate(n){
   document.querySelector('#back').src = imgList[n];
 }
-function animUpdate(n){
+/*function animUpdate(n){
   document.querySelector('#anim').src = animList[n];
   let anim=document.querySelector('#anim');
   anim.classList.add("opacity");
   setTimeout(function(){ anim.classList.remove("opacity");}, 1000);
 
-}
+}*/
 function tabShow(t){
   tab.forEach(array=> {
     array.classList.remove("active");
   }); 
   tab[t].classList.add("active");
+}
+function animUpdate(n){
+  point = document.querySelectorAll('.point');
+  point.forEach(array=> {
+    array.classList.remove("opacity");
+  }); 
+  if(n-1 != -1){
+    point[n-1].classList.add("opacity");
+  }
 }
 function mainEvent(f){
     flag=f;
@@ -97,7 +106,7 @@ function mainEvent(f){
         case 0:
           imageUpdate(0);
           obj.classList.add("hidden");
-          //animUpdate(0);
+          animUpdate(0);
           //tabShow(f);
         break;
         case 1:
@@ -106,7 +115,7 @@ function mainEvent(f){
           macUpdate(f);
           //tabShow(f);
           //imageUpdate(1);
-          //animUpdate(1);
+          animUpdate(1);
         break;
         case 2:
           start();
@@ -114,7 +123,7 @@ function mainEvent(f){
           macUpdate(f);
           //tabShow(f);
           //imageUpdate(2);
-          //animUpdate(2);
+          animUpdate(2);
         break;
         case 3:
           start();
@@ -122,7 +131,7 @@ function mainEvent(f){
           macUpdate(f);
           //tabShow(f);
           //imageUpdate(2);
-          //animUpdate(2);
+          animUpdate(3);
         break;
     }
 }
