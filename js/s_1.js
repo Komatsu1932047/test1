@@ -1,6 +1,6 @@
 
 let flag = 0 ;
-let imgList = ["img/s_1/s1-2.svg", "img/net_3/3-2.svg", "img/net_3/3-3.svg"];
+let imgList = ["img/s_1/n-1.svg", "img/s_1/111.svg", "img/s_1/112.svg", "img/s_1/121.svg", "img/s_1/122.svg", "img/s_1/211.svg", "img/s_1/212.svg", "img/s_1/221.svg", "img/s_1/222.svg"];
 let animList = ["img/net_2/0.svg", "img/net_2/1.svg", "img/net_2/2.svg", "img/net_2/3.svg", "img/net_2/4.svg", "img/net_2/5.svg", "img/net_2/6.svg", ]
 let time = 500;
 function back(){
@@ -28,8 +28,35 @@ function start(){
   var ip_a = document.querySelector( '#ip-a' ); // 追加する先の要素を取得
   ip_a.textContent=ip1[0].value+'.'+ip1[1].value+'.'+ip1[2].value+'.'+ip1[3].value;
   
-  
-  flag=0;
+  let img = document.querySelector( '.cone1:checked' ).value + document.querySelector( '.cone2:checked' ).value + document.querySelector( '.cone3:checked' ).value;
+  console.log( img );
+  switch(img){
+    case "111":
+      document.querySelector('#back').src = imgList[1];
+    break;
+    case "112":
+      document.querySelector('#back').src = imgList[2];
+    break;
+    case "121":
+      document.querySelector('#back').src = imgList[3];
+    break;
+    case "122":
+      document.querySelector('#back').src = imgList[4];
+    break;
+    case "211":
+      document.querySelector('#back').src = imgList[5];
+    break;
+    case "212":
+      document.querySelector('#back').src = imgList[6];
+    break;
+    case "221":
+      document.querySelector('#back').src = imgList[7];
+    break;
+    case "222":
+      document.querySelector('#back').src = imgList[8];
+    break;
+  }
+  flag=1;
   mainEvent(flag);
 }
 function reset(){
@@ -67,8 +94,8 @@ function mainEvent(f){
           tabShow(f);
           break;
         case 1:
-          tabShow(f);
-          imageUpdate(1);
+          //tabShow(f);
+          //imageUpdate(1);
           //animUpdate(1);
           break;
         case 2:
