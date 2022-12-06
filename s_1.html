@@ -55,7 +55,7 @@
         </nav>
 		<!-- メイン部分-->
 		<div class="main">
-			<table class="obj">
+			<table class="obj hidden">
 				<tr>
 				  <th>送信元MACアドレス</th>
 				  <th>宛先MACアドレス</th>
@@ -63,21 +63,16 @@
 				  <th>宛先IPアドレス</th>
 				</tr>
 				<tr>
-				  <td>27</td>
-				  <td>27</td>
-				  <td id="base01"></td>
-				  <td>27</td>
+				  <td id="mac-a"></td>
+				  <td id="mac-b"></td>
+				  <td id="ip-a"></td>
+				  <td id="ip-b"></td>
 				</tr>
-				<tr>
-				  <td>佐藤</td>
-				  <td>42</td>
-				  <td>42</td>
-				  <td>42</td>
-				</tr>
+				
 			  </table>
 			
 			<img id="anim" class="layer" src="img/net_2/0.svg">
-            <img id="back" class="layer" src="img/s_1/s1-2.svg">
+            <img id="back" class="layer" src="img/s_1/n-1.svg">
 	   
 			
 		</div>	
@@ -117,7 +112,9 @@
 							<input type="tel" maxlength="3" inputmode="numeric" oninput="value = value.replace(/[^0-9]+/i,'');" / value="10" id="ip1-4" class="IP1"></input>
 						</div>
 						<label>・ホストBのIPアドレス</label>
-						<div>							<input type="tel" maxlength="3" inputmode="numeric" oninput="value = value.replace(/[^0-9]+/i,'');" / value="168" id="ip2-2" class="IP2"></input>.
+						<div>
+							<input type="tel" maxlength="3" inputmode="numeric" oninput="value = value.replace(/[^0-9]+/i,'');" / value="192" id="ip2-1" class="IP2"></input>.
+							<input type="tel" maxlength="3" inputmode="numeric" oninput="value = value.replace(/[^0-9]+/i,'');" / value="168" id="ip2-2" class="IP2"></input>.
 							<input type="tel" maxlength="3" inputmode="numeric" oninput="value = value.replace(/[^0-9]+/i,'');" / value="144" id="ip2-3" class="IP2"></input>.
 							<input type="tel" maxlength="3" inputmode="numeric" oninput="value = value.replace(/[^0-9]+/i,'');" / value="12" id="ip2-4" class="IP2"></input>
 						</div>
@@ -187,20 +184,20 @@
 						<p></p>
 						<label>・ポイントA</label>
 						<form id="cone-form1">
-							<input type="radio" value="1" class="cone1" name="cone1" checked>イーサネット
-							<input type="radio" value="2" class="cone1" name="cone1">IEEE802.11(無線)
+							<input type="radio" value="1" id = e1 class="cone1" name="cone1" checked><label for="e1">イーサネット</label>
+							<input type="radio" value="2" id = i1 class="cone1" name="cone1"><label for="i1">IEEE802.11(無線)</label>
 						</form>
 						<p></p>
 						<label>・ポイントB</label>
 						<form id="cone-form1">
-							<input type="radio" value="1" class="cone2" name="cone2" checked>イーサネット
-							<input type="radio" value="2" class="cone2" name="cone2">IEEE802.11(無線)
+							<input type="radio" value="10" id = e2 class="cone2" name="cone2" checked><label for="e2">イーサネット</label>
+							<input type="radio" value="20" id = i2 class="cone2" name="cone2"><label for="i2">IEEE802.11(無線)</label>
 						</form>
 						<p></p>
 						<label>・ポイントC</label>
 						<form id="cone-form1">
-							<input type="radio" value="1" class="cone3" name="cone3" checked>イーサネット
-							<input type="radio" value="2" class="cone3" name="cone3">IEEE802.11(無線)
+							<input type="radio" value="100" id = e3 class="cone3" name="cone3" checked><label for="e3">イーサネット</label>
+							<input type="radio" value="200" id = i3 class="cone3" name="cone3"><label for="i3">IEEE802.11(無線)</label>
 						</form>
 						<p></p>
 						<button type="button"  id="start" onclick = "start()">開始</button>

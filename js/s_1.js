@@ -20,9 +20,13 @@ function next(){
 function start(){
   const ip1 = document.querySelectorAll('.IP1');
   const ip2 = document.querySelectorAll('.IP2');
+  const mac1 = document.querySelectorAll('.MAC1');
+  const mac2 = document.querySelectorAll('.MAC2');
+  const mac3 = document.querySelectorAll('.MAC3');
+  const mac4 = document.querySelectorAll('.MAC4');
   
-  var ipa1 = document.querySelector( '#base01' ); // 追加する先の要素を取得
-  ipa1.textContent=ip1[0].value+'.'+ip1[1].value+'.'+ip1[2].value+'.'+ip1[3].value;
+  var ip_a = document.querySelector( '#ip-a' ); // 追加する先の要素を取得
+  ip_a.textContent=ip1[0].value+'.'+ip1[1].value+'.'+ip1[2].value+'.'+ip1[3].value;
   
   
   flag=0;

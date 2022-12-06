@@ -3,6 +3,7 @@
 }
 .obj{
     top: 550px;
+    left: 100px;
     position: absolute;
 }
 .IP1{
@@ -15,13 +16,13 @@
     width: 40px;
 }
 .MAC2{
-    width: 41px;
+    width: 40px;
 }
 .MAC3{
-    width: 41px;
+    width: 40px;
 }
 .MAC4{
-    width: 41px;
+    width: 40px;
 }
 .layer{
     
