@@ -35,22 +35,22 @@ function start(){
       document.querySelector('#back').src = imgList[1];
     break;
     case "112":
-      document.querySelector('#back').src = imgList[2];
+      document.querySelector('#back').src = imgList[5];
     break;
     case "121":
       document.querySelector('#back').src = imgList[3];
     break;
     case "122":
-      document.querySelector('#back').src = imgList[4];
+      document.querySelector('#back').src = imgList[7];
     break;
     case "211":
-      document.querySelector('#back').src = imgList[5];
+      document.querySelector('#back').src = imgList[2];
     break;
     case "212":
       document.querySelector('#back').src = imgList[6];
     break;
     case "221":
-      document.querySelector('#back').src = imgList[7];
+      document.querySelector('#back').src = imgList[4];
     break;
     case "222":
       document.querySelector('#back').src = imgList[8];
