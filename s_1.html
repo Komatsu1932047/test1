@@ -57,16 +57,16 @@
 		<div class="main">
 			<table class="obj hidden">
 				<tr>
-				  <th>送信元MACアドレス</th>
-				  <th>宛先MACアドレス</th>
-				  <th>送信元IPアドレス</th>
-				  <th>宛先IPアドレス</th>
+				  <th class="mac">送信元MACアドレス</th>
+				  <th class="mac">宛先MACアドレス</th>
+				  <th class="ip">送信元IPアドレス</th>
+				  <th class="ip">宛先IPアドレス</th>
 				</tr>
 				<tr>
-				  <td id="mac-a"></td>
-				  <td id="mac-b"></td>
-				  <td id="ip-a"></td>
-				  <td id="ip-b"></td>
+				  <td id="mac-a" class="mac"></td>
+				  <td id="mac-b" class="mac"></td>
+				  <td id="ip-a" class="ip"></td>
+				  <td id="ip-b" class="ip"></td>
 				</tr>
 				
 			  </table>
@@ -76,9 +76,10 @@
 	   
 			
 		</div>	
-		<button type="button"  id="back_" onclick = "back()">戻る</button>
-		<button type="button"  id="next_" onclick = "next()">進む</button>
 		<button type="button"  id="layer_0" onclick = "mainEvent(0)">使い方</button>
+		<button type="button"  id="layer_0" onclick = "mainEvent(1)">ポイントA</button>
+		<button type="button"  id="layer_0" onclick = "mainEvent(2)">ポイントB</button>
+		<button type="button"  id="layer_0" onclick = "mainEvent(3)">ポイントC</button>
 		
         <!-- オフキャンバス -->
 			<div class="offcanvas offcanvas-end" data-bs-backdrop="false" tabindex="-1" id="Offcanvas_1" aria-labelledby="exampleOffcanvasLabel">
@@ -153,20 +154,20 @@
 						<label>・ルータAのMACアドレス</label>
 						<div>
 							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="00" id="mac3-1" class="MAC3"></input>:
-							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="12" id="mac3-2" class="MAC3"></input>:
-							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="2D" id="mac3-3" class="MAC3"></input>:
-							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="02" id="mac3-4" class="MAC3"></input>:
-							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="81" id="mac3-5" class="MAC3"></input>:
-							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="98" id="mac3-6" class="MAC3"></input>
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="15" id="mac3-2" class="MAC3"></input>:
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="CD" id="mac3-3" class="MAC3"></input>:
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="66" id="mac3-4" class="MAC3"></input>:
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="E2" id="mac3-5" class="MAC3"></input>:
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="A1" id="mac3-6" class="MAC3"></input>
 						</div>
 						<label>・ルータBのMACアドレス</label>
 						<div>
 							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="00" id="mac4-1" class="MAC4"></input>:
-							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="12" id="mac4-2" class="MAC4"></input>:
-							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="2D" id="mac4-3" class="MAC4"></input>:
-							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="02" id="mac4-4" class="MAC4"></input>:
-							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="81" id="mac4-5" class="MAC4"></input>:
-							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="98" id="mac4-6" class="MAC4"></input>
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="19" id="mac4-2" class="MAC4"></input>:
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="45" id="mac4-3" class="MAC4"></input>:
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="99" id="mac4-4" class="MAC4"></input>:
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="BD" id="mac4-5" class="MAC4"></input>:
+							<input type="tel" maxlength="2" inputmode="email" oninput="value = value.replace(/[^0-9a-fA-F]+/i,'');" / value="87" id="mac4-6" class="MAC4"></input>
 						</div>
 						<p></p>
 						<div class="accordion-item">

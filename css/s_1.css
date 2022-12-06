@@ -28,6 +28,12 @@
     
     width: 60%;
 }
+.ip{
+    background: #FFB48A !important;
+}
+.mac{
+    background: #D4EEFF !important;
+}
 .tab-content{
     width: 550px;
 }
@@ -40,6 +46,12 @@ table {
 th, td {
     padding: 5px 15px; /* 上下 左右 */
     border: solid 1px #333; /* 線の種類 太さ 色 */
+}
+.ip th, td{
+    background: #FFB48A !important;
+}
+.mac th, td{
+    background: #D4EEFF !important;
 }
 #back{
     
