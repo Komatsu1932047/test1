@@ -55,10 +55,16 @@
         </nav>
 		<!-- メイン部分-->
 		<div class="main">
+			<img id="anim" class="layer" src="img/net_2/0.svg">
             <img id="back" class="layer" src="img/new/1.svg" >
 		</div>	
 		<button type="button"  id="back_" onclick = "back()">戻る</button>
 		<button type="button"  id="next_" onclick = "next()">進む</button>
+		<button type="button"  id="layer_0" onclick = "mainEvent(0)">1</button>
+		<button type="button"  id="layer_0" onclick = "mainEvent(1)">2</button>
+		<button type="button"  id="layer_0" onclick = "mainEvent(2)">3</button>
+		<button type="button"  id="layer_0" onclick = "mainEvent(3)">4</button>
+		<button type="button"  id="layer_0" onclick = "mainEvent(0)">5</button>
 		
         <!-- オフキャンバス -->
 			<div class="offcanvas offcanvas-end" data-bs-backdrop="false" tabindex="-1" id="Offcanvas_1" aria-labelledby="exampleOffcanvasLabel">
@@ -123,16 +129,24 @@
 		<!-- パネル部分 -->
 		<div class="tab-content " id="nav-tabContent">
 			<div class="tab-pane active" id="tab-1" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-                <p><span class="space"></span>コンピュータが誕生した頃、コンピュータは他のコンピュータと接続しない形態で利用していました。この形態を<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_1"  aria-controls="accordion-body_1" onclick = "canvasOn()">スタンドアロン</u>
+                <p><span class="space"></span>1_インターネットで通信をするためには、プロトコルが必要です。インターネットを運用するためのプロトコル<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_1"  aria-controls="accordion-body_1" onclick = "canvasOn()">スタンドアロン</u>
                     と言います。</p>
 			</div>
 			<div class="tab-pane" id="tab-2" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-			  <p><span class="space"></span>コンピュータの進化につれて、コンピュータは相互に接続し利用されるようになります。</p>
+			  <p><span class="space"></span>2_</p>
 			</div>
 			<div class="tab-pane " id="tab-3" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-				<p><span class="space"></span>複数台のコンピュータをケーブルや電波などで接続して、相互に通信する仕組みを<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_2"  aria-controls="accordion-body_2" onclick = "canvasOn()">ネットワーク</u>
+				<p><span class="space"></span>3_<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_2"  aria-controls="accordion-body_2" onclick = "canvasOn()">ネットワーク</u>
+                    と言います。</p>
+			</div>
+			<div class="tab-pane " id="tab-4" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+				<p><span class="space"></span>4_<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_2"  aria-controls="accordion-body_2" onclick = "canvasOn()">ネットワーク</u>
+                    と言います。</p>
+			</div>
+			<div class="tab-pane " id="tab-5" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+				<p><span class="space"></span>5_<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_2"  aria-controls="accordion-body_2" onclick = "canvasOn()">ネットワーク</u>
                     と言います。</p>
 			</div>
 		</div>
 	</body>
-</html>
+</html>;
