@@ -11,6 +11,9 @@
 #anim{
     position: absolute;
 }
+.tab-content{
+    width: 550px;
+}
 #stand{
     width: 1100px;
     top:0%;
