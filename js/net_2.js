@@ -36,7 +36,6 @@ function animUpdate(n){
   let anim=document.querySelector('#anim');
   anim.classList.add("opacity");
   setTimeout(function(){ anim.classList.remove("opacity");}, 1000);
-
 }
 function tabShow(t){
   tab.forEach(array=> {

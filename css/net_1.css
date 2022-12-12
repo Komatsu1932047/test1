@@ -8,11 +8,9 @@
 .layer{
     width: 60%;
 }
-#ya_1{ 
-    width: 100px;
-    top:35%;
-    left:40%;
- }
+#anim{
+    position: absolute;
+}
 #stand{
     width: 1100px;
     top:0%;
