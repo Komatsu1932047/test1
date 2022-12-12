@@ -12,12 +12,12 @@
     position: absolute;
 }
 .tab-content{
-    width: 550px;
+    width: 555px;
 }
 #stand{
     width: 1100px;
     top:0%;
-    left:0%;
+    left:0%;5
  }
 #network_1{
     top:50%;
