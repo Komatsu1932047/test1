@@ -72,12 +72,12 @@ th, td {
 .none{
     display:none;
 }
-.no-spin::-webkit-inner-spin-button,
-.no-spin::-webkit-outer-spin-button {
-    -webkit-appearance: none !important;
-    margin: 0 !important;
-    -moz-appearance:textfield !important;
-}
+
+input[type="number"]::-webkit-outer-spin-button, /* inputスピンの非表示 */
+input[type="number"]::-webkit-inner-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+} 
 .opacity{ /*透明度変わる*/
     animation:opacity 1.5s infinite ease-in-out;
 }
