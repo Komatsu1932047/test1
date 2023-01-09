@@ -182,7 +182,7 @@
 							</h2>
 							<div id="accordion-body_9" class="accordion-collapse collapse" aria-labelledby="accordion-header_9">
 							  <div class="accordion-body">
-								  &nbsp;OSI参照モデルのトランスポート層とほぼ同じ役割をもつ。違う点として、トランスポート層(OSI参照モデル)の上位層であるセッション層の機能も含まれている。アプリケーションからデータをどのような手順で伝えるかを決める。
+								  &nbsp;OSI参照モデルのトランスポート層とほぼ同じ役割をもつ。違う点として、トランスポート層(OSI参照モデル)の上位層であるセッション層の一部の機能も含まれている。アプリケーションからデータをどのような手順で伝えるかを決める。
 								  具体的にはアプリケーションが通信を行う際に、コンピュータのどのポート番号を使うかを判別するなど。
 							  </div>
 							</div>
@@ -207,7 +207,7 @@
 							</h2>
 							<div id="accordion-body_11" class="accordion-collapse collapse" aria-labelledby="accordion-header_11">
 							  <div class="accordion-body">
-								  &nbsp;セッション層は、上位層から渡されたデータをどんなコネクションを使って送受信するかを決める役割をもつ。また、コネクションの確立、切断のタイミングやコネクションが中断された場合はセッションの再確立を行う。
+								  &nbsp;プレゼンテーション層は上位のアプリケーション層からデータを受け取り、適切な形式のデータに変換して下位のセッション層に渡す。通信に用いられるデータの暗号化や形式間の変換などの役割をもつ。データ形式が異なると、文字化けや画像、音楽が読み込めないといった問題が発生する。
 							  </div>
 							</div>
 						</div>
@@ -219,7 +219,7 @@
 							</h2>
 							<div id="accordion-body_12" class="accordion-collapse collapse" aria-labelledby="accordion-header_12">
 							  <div class="accordion-body">
-								  &nbsp;セッション層は、上位層から渡されたデータをどんなコネクションを使って送受信するかを決める役割をもつ。また、コネクションの確立、切断のタイミングやコネクションが中断された場合はセッションの再確立を行う。
+								  &nbsp;アプリケーションの中で通信に関係する部分を定めている。ファイル転送や電子メールなどのアプリケーションにおいて、データの送信処理、受信処理の部分を実現する。また、アプリケーション固有のエラー処理も行う。
 							  </div>
 							</div>
 						</div>
@@ -231,7 +231,7 @@
 							</h2>
 							<div id="accordion-body_13" class="accordion-collapse collapse" aria-labelledby="accordion-header_13">
 							  <div class="accordion-body">
-								  &nbsp;セッション層は、上位層から渡されたデータをどんなコネクションを使って送受信するかを決める役割をもつ。また、コネクションの確立、切断のタイミングやコネクションが中断された場合はセッションの再確立を行う。
+								  &nbsp;OSI参照モデルのセッション層、プレゼンテーション層、アプリケーション層の位置に置かれているが、セッション層の一部の機能はTCP/IPでアプリケーション層の下位層にあたるトランスポート層が行うように、完全に対応しているわけでは無い。アプリケーションが通信機能を使うときに必要なプロトコルを定めている。
 							  </div>
 							</div>
 						</div>
@@ -239,15 +239,6 @@
 				</div>
 			</div>
 
-		<!-- 下部解説タブ -->
-		<!-- <nav>
-			<div class="nav nav-tabs" id="nav-tab" role="tablist">
-			  <button type="button" class="nav-link active d_tab" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">1</button>
-			  <button type="button" class="nav-link d_tab" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">2</button>
-			  <button type="button" class="nav-link d_tab" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">3</button>
-			</div>
-		</nav>
-		-->
 		<!-- パネル部分 -->
 		<div class="tab-content " id="nav-tabContent">
 			<div class="tab-pane active" id="tab-1" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
