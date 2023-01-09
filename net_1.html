@@ -137,6 +137,30 @@
 							  </div>
 							</div>
 						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="accordion-header_6">
+							  <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-body_6" aria-expanded="false" aria-controls="accordion-body_6">
+								  <strong>ネットワーク層</strong>
+							  </button>
+							</h2>
+							<div id="accordion-body_6" class="accordion-collapse collapse" aria-labelledby="accordion-header_6">
+							  <div class="accordion-body">
+								  &nbsp;データを送信する始点から、終点である受信側に送り届ける役割をもつ。データリンク層は直接接続された１区間の通信を実現するが、ネットワーク層は終点までの通信を実現する。
+							  </div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="accordion-header_7">
+							  <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-body_7" aria-expanded="false" aria-controls="accordion-body_7">
+								  <strong>インターネット層</strong>
+							  </button>
+							</h2>
+							<div id="accordion-body_7" class="accordion-collapse collapse" aria-labelledby="accordion-header_7">
+							  <div class="accordion-body">
+								  &nbsp;上位層からの要求を受けて、データを送出する、受信時は上位層にデータを渡す。この層では、IPが代表的なプロトコルであり、ネットワーク上での位置情報となるIPアドレスを利用して通信を実現している。
+							  </div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -153,16 +177,24 @@
 		<!-- パネル部分 -->
 		<div class="tab-content " id="nav-tabContent">
 			<div class="tab-pane active" id="tab-1" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-                <p><span class="space"></span>1_インターネットで通信をするためには、<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_1"  aria-controls="accordion-body_1" onclick = "canvasOn()">プロトコル</u>が必要である。インターネットを運用するためのプロトコルがTCP/IPである。<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_2"  aria-controls="accordion-body_2" onclick = "canvasOn()">OSI参照モデル</u>とは
+                <p><span class="space"></span>1_インターネットで通信をするためには、<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_1"  aria-controls="accordion-body_1" onclick = "canvasOn()">プロトコル</u>が必要である。インターネットを運用するためのプロトコルがTCP/IPである。
+					<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_2"  aria-controls="accordion-body_2" onclick = "canvasOn()">OSI参照モデル</u>とは
                     通信の機能を７つの層に分類したモデルである。</p>
 			</div>
 			<div class="tab-pane" id="tab-2" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-			  <p><span class="space"></span>2_<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_3"  aria-controls="accordion-body_3" onclick = "canvasOn()">物理層</u>と<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_4"  aria-controls="accordion-body_4" onclick = "canvasOn()">データリンク層</u>、TCP/IPでは<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_5"  aria-controls="accordion-body_5" onclick = "canvasOn()">ネットワークインタフェース層</u>にあたる。<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_3"  aria-controls="accordion-body_3" onclick = "canvasOn()">物理層</u>は、データの0や1を電圧や光のパルスに変換して通信媒体に流す。<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_4"  aria-controls="accordion-body_4" onclick = "canvasOn()">データリンク層</u>は直接接続された機器同士で通信を行えるようにする。
-				</p>
+			  <p><span class="space"></span>2_<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_3"  aria-controls="accordion-body_3" onclick = "canvasOn()">物理層</u>と
+				<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_4"  aria-controls="accordion-body_4" onclick = "canvasOn()">データリンク層</u>、
+				TCP/IPでは<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_5"  aria-controls="accordion-body_5" onclick = "canvasOn()">ネットワークインタフェース層</u>にあたる。
+				<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_3"  aria-controls="accordion-body_3" onclick = "canvasOn()">物理層</u>は、データの0や1を電圧や光のパルスに変換して通信媒体に流す。
+				<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_4"  aria-controls="accordion-body_4" onclick = "canvasOn()">データリンク層</u>は直接接続された機器同士で通信を行えるようにする。
+			  </p>
 			</div>
 			<div class="tab-pane " id="tab-3" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-				<p><span class="space"></span>3_<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_6"  aria-controls="accordion-body_6" onclick = "canvasOn()">ネットワーク層</u>、TCP/IPでは<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_7"  aria-controls="accordion-body_7" onclick = "canvasOn()">インターネット層</u>にあたる。
-                    と言います。</p>
+				<p><span class="space"></span>3_<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_6"  aria-controls="accordion-body_6" onclick = "canvasOn()">ネットワーク層</u>、
+					TCP/IPでは<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_7"  aria-controls="accordion-body_7" onclick = "canvasOn()">インターネット層</u>にあたる。
+					<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_6"  aria-controls="accordion-body_6" onclick = "canvasOn()">ネットワーク層</u>は、送信元から最終的な受信先まで間に様々なネットワークが存在していてもデータを送り届ける役割をもつ。送信元から受信先までの間の通信は
+					<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_4"  aria-controls="accordion-body_4" onclick = "canvasOn()">データリンク層</u>が制御する。
+                </p>
 			</div>
 			<div class="tab-pane " id="tab-4" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
 				<p><span class="space"></span>4_<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_2"  aria-controls="accordion-body_2" onclick = "canvasOn()">ネットワーク</u>
