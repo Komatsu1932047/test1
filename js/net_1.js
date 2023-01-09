@@ -12,7 +12,7 @@ function back(){
     mainEvent(flag);
 }
 function next(){
-    if(flag < 4){
+    if(flag < 5){
         flag++;
     }
     console.log(flag);
@@ -45,6 +45,7 @@ function tabShow(t){
   tab[t].classList.add("active");
 }
 function mainEvent(f){
+  //console.log(f);
     switch(f){
         case 0:
           tabShow(f);
