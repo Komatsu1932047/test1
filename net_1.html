@@ -79,7 +79,7 @@
 					<div class="accordion" id="accordion_1">
 						<div class="accordion-item">
 						  <h2 class="accordion-header" id="accordion-header_1">
-							<button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion-body_1" aria-expanded="false" aria-controls="accordion-body_1">
+							<button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-body_1" aria-expanded="false" aria-controls="accordion-body_1">
 								<strong>プロトコル</strong>
 							</button>
 						  </h2>
@@ -104,16 +104,28 @@
 						<div class="accordion-item">
 						  <h2 class="accordion-header" id="accordion-header_3">
 							<button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-body_3" aria-expanded="false" aria-controls="accordion-body_3">
-								<strong>C</strong>
+								<strong>物理層</strong>
 							</button>
 						  </h2>
 						  <div id="accordion-body_3" class="accordion-collapse collapse" aria-labelledby="accordion-header_3">
 							<div class="accordion-body">
-							  これは3番目のアイテムのアコーディオン本体。
+								物理層は、データの0や1を電圧や光のパルスに変換して物理的な通信媒体に流す。物理的な通信媒体とは、有線接続では同軸ケーブルやツイストペアケーブル、光ケーブルを利用する。無線通信では電磁波を利用する。
 							</div>
 						  </div>
 						</div>
-					  </div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="accordion-header_4">
+							  <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-body_4" aria-expanded="false" aria-controls="accordion-body_4">
+								  <strong>データリンク層</strong>
+							  </button>
+							</h2>
+							<div id="accordion-body_4" class="accordion-collapse collapse" aria-labelledby="accordion-header_4">
+							  <div class="accordion-body">
+								  &nbsp;コンピュータコンピュータが互いに通信するために必要な約束ごと。プロトコルがあることによって，コンピュータの製造元や内部が異なっていても通信ができる。
+							  </div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -129,11 +141,11 @@
 		<!-- パネル部分 -->
 		<div class="tab-content " id="nav-tabContent">
 			<div class="tab-pane active" id="tab-1" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-                <p><span class="space"></span>1_インターネットで通信をするためには、<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_1"  aria-controls="accordion-body_1" onclick = "canvasOn()">プロトコル</u>が必要です。インターネットを運用するためのプロトコルをTCP/IPといいます。<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_2"  aria-controls="accordion-body_2" onclick = "canvasOn()">OSI参照モデル</u>とは
-                    通信の機能を７つの層に分類したモデルです。</p>
+                <p><span class="space"></span>1_インターネットで通信をするためには、<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_1"  aria-controls="accordion-body_1" onclick = "canvasOn()">プロトコル</u>が必要である。インターネットを運用するためのプロトコルがTCP/IPである。<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_2"  aria-controls="accordion-body_2" onclick = "canvasOn()">OSI参照モデル</u>とは
+                    通信の機能を７つの層に分類したモデルである。</p>
 			</div>
 			<div class="tab-pane" id="tab-2" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-			  <p><span class="space"></span>2_データリンク層と物理層です。TCP/IPではネットワークインタフェース層にあたります。
+			  <p><span class="space"></span>2_<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_3"  aria-controls="accordion-body_3" onclick = "canvasOn()">物理層</u>と<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_4"  aria-controls="accordion-body_4" onclick = "canvasOn()">データリンク層</u>。TCP/IPではネットワークインタフェース層にあたる。<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_3"  aria-controls="accordion-body_3" onclick = "canvasOn()">物理層</u>は、データの0や1を電圧や光のパルスに変換して通信媒体に流す。データリンク層は直接接続された機器同士で通信を行えるようにする。
 				</p>
 			</div>
 			<div class="tab-pane " id="tab-3" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
