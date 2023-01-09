@@ -161,6 +161,44 @@
 							  </div>
 							</div>
 						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="accordion-header_8">
+							  <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-body_8" aria-expanded="false" aria-controls="accordion-body_8">
+								  <strong>トランスポート層(OSIモデル)</strong>
+							  </button>
+							</h2>
+							<div id="accordion-body_8" class="accordion-collapse collapse" aria-labelledby="accordion-header_8">
+							  <div class="accordion-body">
+								  &nbsp;データの送受信をする前に、送信側から受信側への通信路を確保します。これをコネクションの確立という。また、通信が終わった場合はコネクションを切断するという役割をもつ。エラー検出・訂正と再送制御も行う。
+
+							  </div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="accordion-header_9">
+							  <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-body_9" aria-expanded="false" aria-controls="accordion-body_9">
+								  <strong>トランスポート層(TCP/IP)</strong>
+							  </button>
+							</h2>
+							<div id="accordion-body_9" class="accordion-collapse collapse" aria-labelledby="accordion-header_9">
+							  <div class="accordion-body">
+								  &nbsp;OSI参照モデルのトランスポート層とほぼ同じ役割をもつ。違う点として、トランスポート層(OSI参照モデル)の上位層であるセッション層の機能も含まれている。アプリケーションからデータをどのような手順で伝えるかを決める。
+								  具体的にはアプリケーションが通信を行う際に、コンピュータのどのポート番号を使うかを判別するなど。
+							  </div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="accordion-header_10">
+							  <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-body_10" aria-expanded="false" aria-controls="accordion-body_10">
+								  <strong>セッション層</strong>
+							  </button>
+							</h2>
+							<div id="accordion-body_10" class="accordion-collapse collapse" aria-labelledby="accordion-header_10">
+							  <div class="accordion-body">
+								  &nbsp;セッション層は、上位層から渡されたデータをどんなコネクションを使って送受信するかを決める役割をもつ。また、コネクションの確立、切断のタイミングやコネクションが中断された場合はセッションの再確立を行う。
+							  </div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -197,8 +235,12 @@
                 </p>
 			</div>
 			<div class="tab-pane " id="tab-4" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-				<p><span class="space"></span>4_<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_2"  aria-controls="accordion-body_2" onclick = "canvasOn()">ネットワーク</u>
-                    と言います。</p>
+				<p><span class="space"></span>4_<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_8"  aria-controls="accordion-body_8" onclick = "canvasOn()">トランスポート層(OSIモデル)</u>は、データ送受信の準備であるコネクションの確立をする。
+					TCP/IPと同じ名称であるが、役割は完全に同じではない。
+					<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_9"  aria-controls="accordion-body_9" onclick = "canvasOn()">トランスポート層(TCP/IP)</u>は、
+					<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_8"  aria-controls="accordion-body_8" onclick = "canvasOn()">トランスポート層(OSIモデル)</u>の上位層である
+					<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_10"  aria-controls="accordion-body_10" onclick = "canvasOn()">セッション層</u>の役割も行う。
+				</p>
 			</div>
 			<div class="tab-pane " id="tab-5" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
 				<p><span class="space"></span>5_<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_2"  aria-controls="accordion-body_2" onclick = "canvasOn()">ネットワーク</u>
