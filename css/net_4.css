@@ -1,0 +1,44 @@
+.space{
+    margin-right : 20px;
+}
+.main{
+    
+    
+}
+.layer{
+    
+    width: 60%;
+}
+.tab-content{
+    width: 550px;
+}
+#anim{
+     position: absolute;
+}
+#back{
+    
+}
+.hidden{
+    visibility:hidden;
+}
+.none{
+    display:none;
+}
+.opacity{ /*透明度変わる*/
+    animation:opacity 1s  ease-in-out;
+}
+/*キーフレーム。*/
+@keyframes opacity {
+
+    0% {
+    opacity:0.0;
+    }
+    50% {
+    opacity:0.5;
+    }
+    100% {
+    
+    opacity:1.0;
+    }
+    
+}   

@@ -1,0 +1,61 @@
+.space{
+    margin-right : 20px;
+}
+.main{
+    position: relative;
+    
+}
+.layer{
+    width: 55%;
+}
+#anim{
+    position: absolute;
+}
+.tab-content{
+    width: 570px;
+}
+#stand{
+    width: 1100px;
+    top:0%;
+    left:0%;
+ }
+#network_1{
+    top:50%;
+    width: 1100px;
+    left:0px;
+ }
+#internet_1{
+    width: 600px;
+    top:62%;
+    left:470px;
+ }
+#next{
+     
+}
+#back{
+    
+}
+.hidden{
+    visibility:hidden;
+}
+.none{
+    display:none;
+}
+.opacity{ /*透明度変わる*/
+    animation:opacity 1s infinite ease-in-out;
+}
+/*キーフレーム。*/
+@keyframes opacity {
+
+    0% {
+    opacity:0.9;
+    }
+    50% {
+    opacity:0.6;
+    }
+    100% {
+    
+    opacity:0.9;
+    }
+    
+}   

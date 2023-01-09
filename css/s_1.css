@@ -1,0 +1,98 @@
+.space{
+    margin-right : 20px;
+}
+.obj{
+    top: 470px;
+    
+    position: absolute;
+}
+.IP1{
+    width: 45px;
+}
+.IP2{
+    width: 45px;
+}
+.MAC1{
+    width: 40px;
+}
+.MAC2{
+    width: 40px;
+}
+.MAC3{
+    width: 40px;
+}
+.MAC4{
+    width: 40px;
+}
+.layer{
+    
+    width: 60%;
+}
+.point{
+    position: absolute;
+}
+.ip{
+    background: #FFB48A ;
+}
+.mac{
+    background: #D4EEFF ;
+}
+.tab-content{
+    width: 550px;
+}
+#anim{
+     position: absolute;
+}
+table {
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px 15px; /* 上下 左右 */
+    border: solid 1px #333; /* 線の種類 太さ 色 */
+}
+.ip th{
+    background: #FFB467 !important;
+}
+.ip td{
+    background: #FFB48A !important;
+}
+
+.mac th{
+    background: #D4EEFF !important;
+}
+.mac td{
+    background: #BCEEFF !important;
+}
+#back{
+    
+}
+.hidden{
+    visibility:hidden;
+}
+.none{
+    display:none;
+}
+
+input[type="number"]::-webkit-outer-spin-button, /* inputスピンの非表示 */
+input[type="number"]::-webkit-inner-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+} 
+.opacity{ /*透明度変わる*/
+    animation:opacity 1.5s infinite ease-in-out;
+}
+/*キーフレーム。*/
+@keyframes opacity {
+
+    0% {
+    opacity:0.3;
+    }
+    50% {
+    opacity:1.0;
+    }
+    100% {
+    
+    opacity:0.3;
+    }
+    
+}   
