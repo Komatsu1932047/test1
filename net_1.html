@@ -109,7 +109,7 @@
 						  </h2>
 						  <div id="accordion-body_3" class="accordion-collapse collapse" aria-labelledby="accordion-header_3">
 							<div class="accordion-body">
-								物理層は、データの0や1を電圧や光のパルスに変換して物理的な通信媒体に流す。物理的な通信媒体とは、有線接続では同軸ケーブルやツイストペアケーブル、光ケーブルを利用する。無線通信では電磁波を利用する。
+								物理層は、ケーブルやアンテナ、端子（コネクタ）の形状や仕様、データと信号の変換方式などを定義している。物理的な通信媒体とは、有線接続では同軸ケーブルやツイストペアケーブル、光ケーブルなどを利用する。無線通信では電磁波を利用する。
 							</div>
 						  </div>
 						</div>
@@ -121,7 +121,19 @@
 							</h2>
 							<div id="accordion-body_4" class="accordion-collapse collapse" aria-labelledby="accordion-header_4">
 							  <div class="accordion-body">
-								  &nbsp;コンピュータコンピュータが互いに通信するために必要な約束ごと。プロトコルがあることによって，コンピュータの製造元や内部が異なっていても通信ができる。
+								  &nbsp;データリンク層は、直接接続された機器の中でデータの行き先を特定する、データ送受信中の衝突の検知や回避、伝送途上での誤り検知・訂正などの役割がある。
+							  </div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="accordion-header_5">
+							  <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-body_5" aria-expanded="false" aria-controls="accordion-body_5">
+								  <strong>ネットワークインタフェース層</strong>
+							  </button>
+							</h2>
+							<div id="accordion-body_5" class="accordion-collapse collapse" aria-labelledby="accordion-header_5">
+							  <div class="accordion-body">
+								  &nbsp;ネットワークインタフェース層の内部に、物理層にあたるハードウェアという層を置いている。しかし、物理層と違い通信媒体や通信方法に決まりはない。ネットワークインタフェース層はデータリンク層の役割を実現している。この考え方は書籍や資料により異なる。
 							  </div>
 							</div>
 						</div>
@@ -145,11 +157,11 @@
                     通信の機能を７つの層に分類したモデルである。</p>
 			</div>
 			<div class="tab-pane" id="tab-2" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-			  <p><span class="space"></span>2_<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_3"  aria-controls="accordion-body_3" onclick = "canvasOn()">物理層</u>と<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_4"  aria-controls="accordion-body_4" onclick = "canvasOn()">データリンク層</u>。TCP/IPではネットワークインタフェース層にあたる。<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_3"  aria-controls="accordion-body_3" onclick = "canvasOn()">物理層</u>は、データの0や1を電圧や光のパルスに変換して通信媒体に流す。データリンク層は直接接続された機器同士で通信を行えるようにする。
+			  <p><span class="space"></span>2_<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_3"  aria-controls="accordion-body_3" onclick = "canvasOn()">物理層</u>と<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_4"  aria-controls="accordion-body_4" onclick = "canvasOn()">データリンク層</u>、TCP/IPでは<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_5"  aria-controls="accordion-body_5" onclick = "canvasOn()">ネットワークインタフェース層</u>にあたる。<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_3"  aria-controls="accordion-body_3" onclick = "canvasOn()">物理層</u>は、データの0や1を電圧や光のパルスに変換して通信媒体に流す。<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_4"  aria-controls="accordion-body_4" onclick = "canvasOn()">データリンク層</u>は直接接続された機器同士で通信を行えるようにする。
 				</p>
 			</div>
 			<div class="tab-pane " id="tab-3" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-				<p><span class="space"></span>3_<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_2"  aria-controls="accordion-body_2" onclick = "canvasOn()">ネットワーク</u>
+				<p><span class="space"></span>3_<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_6"  aria-controls="accordion-body_6" onclick = "canvasOn()">ネットワーク層</u>、TCP/IPでは<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_7"  aria-controls="accordion-body_7" onclick = "canvasOn()">インターネット層</u>にあたる。
                     と言います。</p>
 			</div>
 			<div class="tab-pane " id="tab-4" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
