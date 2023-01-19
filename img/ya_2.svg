@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="b" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.91 15.76">
+  <defs>
+    <style>
+      .d {
+        fill: #6ad3ff;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="c" data-name="レイヤー 1">
+    <polygon class="d" points="41.04 14.08 41.04 1.54 53.66 7.2 41.04 14.08"/>
+    <polyline class="d" points="39.83 4.7 1.04 4.2 1.24 10.2 40.04 10.7"/>
+  </g>
+</svg>
