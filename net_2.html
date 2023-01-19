@@ -253,8 +253,58 @@
 							</h2>
 							<div id="accordion-body_14" class="accordion-collapse collapse" aria-labelledby="accordion-header_14">
 							  <div class="accordion-body">
-								  &nbsp;IPアドレスとは、ネットワークに繋がっている機器に振り分けられる番号のこと。<br>
-								  ネットワークにおいて、通信の相手先を識別するための番号である。
+								  &nbsp;FCSとは、通信途上でデータに誤りが生じていないか調べるため、送信時にデータに付加される誤り検出符号のこと<br>
+								  データリンク層においてパケットの一番後ろに付けられる。
+							  </div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="accordion-header_15">
+							  <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-body_15" aria-expanded="false" aria-controls="accordion-body_15">
+								  <strong>イーサネットタイプ</strong>
+							  </button>
+							</h2>
+							<div id="accordion-body_15" class="accordion-collapse collapse" aria-labelledby="accordion-header_15">
+							  <div class="accordion-body">
+								  &nbsp;イーサネットタイプとは、イーサネットヘッダ内にあるフィールドの1つで、上位のプロトコルを示す。
+							  </div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="accordion-header_16">
+							  <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-body_16" aria-expanded="false" aria-controls="accordion-body_16">
+								  <strong>プロトコルタイプ</strong>
+							  </button>
+							</h2>
+							<div id="accordion-body_16" class="accordion-collapse collapse" aria-labelledby="accordion-header_16">
+							  <div class="accordion-body">
+								  &nbsp;プロトコルタイプとは、IPヘッダ内にあるフィールドの1つで、上位のプロトコルを示す。
+							  </div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="accordion-header_17">
+							  <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-body_17" aria-expanded="false" aria-controls="accordion-body_17">
+								  <strong>チェックサム</strong>
+							  </button>
+							</h2>
+							<div id="accordion-body_17" class="accordion-collapse collapse" aria-labelledby="accordion-header_17">
+							  <div class="accordion-body">
+								  &nbsp;チェックサムとは、データやヘッダが壊れていないかを確認するビット列である。<br>
+								  チェック範囲の値をすべて足し算し、その結果の値と足し算するとすべてのビットが1になるような値(1の補数)を設定する。受信した側は、同じ演算を行い結果が違うならば破損となる。
+							  </div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="accordion-header_18">
+							  <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-body_18" aria-expanded="false" aria-controls="accordion-body_18">
+								  <strong>確認応答</strong>
+							  </button>
+							</h2>
+							<div id="accordion-body_18" class="accordion-collapse collapse" aria-labelledby="accordion-header_18">
+							  <div class="accordion-body">
+								  &nbsp;ACK【ACKnowledgement】(確認応答)とは、二者間の通信で、相手方に何らかの肯定的な応答を返す際に送られる信号やデータ、パケットなどのことである。<br>
+								  TCPでは、送信側は受信側から確認応答が返ってくるまでデータを送信し続ける。
 							  </div>
 							</div>
 						</div>
@@ -293,7 +343,7 @@
 			</p>
 			</div>
 			<div class="tab-pane " id="tab-3" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-				<p><span class="space"></span><u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_8"  aria-controls="accordion-body_8" onclick = "canvasOn()">IP</u>では
+				<p><span class="space"></span>3_<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_8"  aria-controls="accordion-body_8" onclick = "canvasOn()">IP</u>では
 					<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_3"  aria-controls="accordion-body_3" onclick = "canvasOn()">TCP</u>
 					から渡された<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_6"  aria-controls="accordion-body_6" onclick = "canvasOn()">TCPヘッダ</u>
 					と<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_1"  aria-controls="accordion-body_1" onclick = "canvasOn()">アプリケーション</u>
@@ -308,7 +358,7 @@
 				</p>
 			</div>
 			<div class="tab-pane " id="tab-4" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-				<p><span class="space"></span><u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_8"  aria-controls="accordion-body_8" onclick = "canvasOn()">IP</u>
+				<p><span class="space"></span>4_<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_8"  aria-controls="accordion-body_8" onclick = "canvasOn()">IP</u>
 					から渡されたパケットに、<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_11"  aria-controls="accordion-body_11" onclick = "canvasOn()">イーサネットヘッダ</u>が付与されて送信処理が行われます。
 					<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_11"  aria-controls="accordion-body_11" onclick = "canvasOn()">イーサネットヘッダ</u>
 					には宛先と送信元の<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_12"  aria-controls="accordion-body_12" onclick = "canvasOn()">MACアドレス</u>
@@ -317,23 +367,39 @@
 				</p>
 			</div>
 			<div class="tab-pane " id="tab-5" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-				<p><span class="space"></span>5_説明<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_2"  aria-controls="accordion-body_2" onclick = "canvasOn()">ネットワーク</u>
-                    と言います。
+				<p><span class="space"></span>5_パケットを受け取った受信側は、<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_11"  aria-controls="accordion-body_11" onclick = "canvasOn()">イーサネットヘッダ</u>
+					の宛先<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_12"  aria-controls="accordion-body_12" onclick = "canvasOn()">MACアドレス</u>
+					を確認します。自分宛でない場合はパケットを捨てます。
+					自分宛であった場合は<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_15"  aria-controls="accordion-body_15" onclick = "canvasOn()">イーサネットタイプ</u>
+					を調べて、上位の<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_5"  aria-controls="accordion-body_5" onclick = "canvasOn()">プロトコル</u>にデータ渡します。
+					この図では<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_8"  aria-controls="accordion-body_8" onclick = "canvasOn()">IP</u>
+					のデータなので<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_8"  aria-controls="accordion-body_8" onclick = "canvasOn()">IP</u>にデータを渡します。
 				</p>
 			</div>
 			<div class="tab-pane " id="tab-6" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-				<p><span class="space"></span>6_説明<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_2"  aria-controls="accordion-body_2" onclick = "canvasOn()">ネットワーク</u>
-                    と言います。
+				<p><span class="space"></span>6_<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_9"  aria-controls="accordion-body_9" onclick = "canvasOn()">IPヘッダ</u>
+					の宛先<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_10"  aria-controls="accordion-body_10" onclick = "canvasOn()">IPアドレス</u>
+					を見て、自分の<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_10"  aria-controls="accordion-body_10" onclick = "canvasOn()">IPアドレス</u>
+					ではない場合は<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_11"  aria-controls="accordion-body_11" onclick = "canvasOn()">イーサネットヘッダ</u>
+					の内容を次の送信先に設定してパケットを送信します。
+					宛先が自分であった場合は、プロトコルタイプを見て上位に渡します。今回は<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_3"  aria-controls="accordion-body_3" onclick = "canvasOn()">TCP</u>
+					のため、<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_3"  aria-controls="accordion-body_3" onclick = "canvasOn()">TCP</u>にデータを渡します。
 				</p>
 			</div>
 			<div class="tab-pane " id="tab-7" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-				<p><span class="space"></span>7_説明<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_2"  aria-controls="accordion-body_2" onclick = "canvasOn()">ネットワーク</u>
-                    と言います。
+				<p><span class="space"></span>7_<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_3"  aria-controls="accordion-body_3" onclick = "canvasOn()">TCP</u>
+					では、<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_6"  aria-controls="accordion-body_6" onclick = "canvasOn()">TCPヘッダ</u>
+					内の<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_17"  aria-controls="accordion-body_17" onclick = "canvasOn()">チェックサム</u>を見てデータの破損や順番を確認します。
+					その後、正しくデータが届いたことを知らせる<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_18"  aria-controls="accordion-body_18" onclick = "canvasOn()">確認応答</u>を送信ホストに返します。
+					そして、<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_7"  aria-controls="accordion-body_7" onclick = "canvasOn()">ポート番号</u>
+					を元に<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_1"  aria-controls="accordion-body_1" onclick = "canvasOn()">アプリケーション</u>
+					を識別し、データを渡します。
 				</p>
 			</div>
 			<div class="tab-pane " id="tab-8" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-				<p><span class="space"></span>8_説明<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_2"  aria-controls="accordion-body_2" onclick = "canvasOn()">ネットワーク</u>
-                    と言います。
+				<p><span class="space"></span>8_<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_1"  aria-controls="accordion-body_1" onclick = "canvasOn()">アプリケーション</u>
+					にデータが届き、受信側の<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_1"  aria-controls="accordion-body_1" onclick = "canvasOn()">アプリケーション</u>
+					がデータを処理します。
 				</p>
 			</div>
 		</div>
