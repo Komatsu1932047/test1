@@ -152,14 +152,116 @@
 							</h2>
 							<div id="accordion-body_6" class="accordion-collapse collapse" aria-labelledby="accordion-header_6">
 							  <div class="accordion-body">
-								  &nbsp;コンピュータコンピュータが互いに通信するために必要な約束ごと。プロトコルがあることによって，コンピュータの製造元や内部が異なっていても通信ができる。
+								  &nbsp;TCPヘッダは、TCPの機能を実現するためのヘッダである。<br>
+								  送信ホストと受信ホストのアプリケーションを識別するポート番号や、何番目のデータかを示すシーケンス番号、データ破損を認識するチェックサムなどで構成される。
+							  </div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="accordion-header_7">
+							  <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-body_7" aria-expanded="false" aria-controls="accordion-body_7">
+								  <strong>ポート番号</strong>
+							  </button>
+							</h2>
+							<div id="accordion-body_7" class="accordion-collapse collapse" aria-labelledby="accordion-header_7">
+							  <div class="accordion-body">
+								  &nbsp;ポート番号とは、TCP/IP通信において、 コンピュータが通信に使用するプログラムを識別するための番号である。<br>
+								  ポート番号は16ビットの整数であり、 0番～65535番まである。
+							  </div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="accordion-header_8">
+							  <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-body_8" aria-expanded="false" aria-controls="accordion-body_8">
+								  <strong>IP</strong>
+							  </button>
+							</h2>
+							<div id="accordion-body_8" class="accordion-collapse collapse" aria-labelledby="accordion-header_8">
+							  <div class="accordion-body">
+								  &nbsp;IP（Internet Protocol）とはネットワークをまたいでパケットを配送し通信相手にデータを送り届けるためのプロトコル。
+								  ホストを識別するためにIPアドレスという識別子を利用する。
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="accordion-header_9">
+							  <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-body_9" aria-expanded="false" aria-controls="accordion-body_9">
+								  <strong>IPヘッダ</strong>
+							  </button>
+							</h2>
+							<div id="accordion-body_9" class="accordion-collapse collapse" aria-labelledby="accordion-header_9">
+							  <div class="accordion-body">
+								  &nbsp;IPヘッダとは、送信元IPアドレスや宛先IPアドレスとヘッダの次のプロトコルを示すプロトコルタイプなどで構成されるヘッダである。<br>
+							  </div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="accordion-header_10">
+							  <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-body_10" aria-expanded="false" aria-controls="accordion-body_10">
+								  <strong>IPアドレス</strong>
+							  </button>
+							</h2>
+							<div id="accordion-body_10" class="accordion-collapse collapse" aria-labelledby="accordion-header_10">
+							  <div class="accordion-body">
+								  &nbsp;IPアドレスとは、ネットワークに繋がっている機器に振り分けられる番号のこと。<br>
+								  ネットワークにおいて、通信の相手先を識別するための番号である。
+							  </div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="accordion-header_11">
+							  <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-body_11" aria-expanded="false" aria-controls="accordion-body_11">
+								  <strong>イーサネットヘッダ</strong>
+							  </button>
+							</h2>
+							<div id="accordion-body_11" class="accordion-collapse collapse" aria-labelledby="accordion-header_11">
+							  <div class="accordion-body">
+								  &nbsp;ネットワーク層からデータリンク層に渡されたデータはイーサネットを使用することでイーサネットヘッダを付与します<br>
+								  イーサネットヘッダには、MACアドレスやヘッダの次のプロトコルを示すイーサネットタイプが書き込まれる。
+							  </div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="accordion-header_12">
+							  <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-body_12" aria-expanded="false" aria-controls="accordion-body_12">
+								  <strong>MACアドレス</strong>
+							  </button>
+							</h2>
+							<div id="accordion-body_12" class="accordion-collapse collapse" aria-labelledby="accordion-header_12">
+							  <div class="accordion-body">
+								  &nbsp;MACアドレスとは ネットワーク機器やネットワークアダプターに付いている固有の識別番号である。<br>
+								  物理アドレスとも呼ばれ、直接接続された機器を特定します。
+							  </div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="accordion-header_13">
+							  <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-body_13" aria-expanded="false" aria-controls="accordion-body_13">
+								  <strong>物理層</strong>
+							  </button>
+							</h2>
+							<div id="accordion-body_13" class="accordion-collapse collapse" aria-labelledby="accordion-header_13">
+							  <div class="accordion-body">
+								  &nbsp;物理層は、ケーブルやアンテナ、端子（コネクタ）の形状や仕様、データと信号の変換方式などを定義している。物理的な通信媒体とは、有線接続では同軸ケーブルやツイストペアケーブル、光ケーブルなどを利用する。無線通信では電磁波を利用する。
+							  </div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="accordion-header_14">
+							  <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-body_14" aria-expanded="false" aria-controls="accordion-body_14">
+								  <strong>FCS</strong>
+							  </button>
+							</h2>
+							<div id="accordion-body_14" class="accordion-collapse collapse" aria-labelledby="accordion-header_14">
+							  <div class="accordion-body">
+								  &nbsp;IPアドレスとは、ネットワークに繋がっている機器に振り分けられる番号のこと。<br>
+								  ネットワークにおいて、通信の相手先を識別するための番号である。
 							  </div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
+		</div>
 		<!-- 下部解説タブ -->
 		<!-- <nav>
 			<div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -184,18 +286,34 @@
 			</div>
 			<div class="tab-pane" id="tab-2" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
 			  <p><span class="space"></span>2_次に、どのアプリケーションで処理するか判断する<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_6"  aria-controls="accordion-body_6" onclick = "canvasOn()">TCPヘッダ</u>
-				をデータに付与します。TCPヘッダは、
+				をデータに付与します。<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_6"  aria-controls="accordion-body_6" onclick = "canvasOn()">TCPヘッダ</u>
+				は、<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_1"  aria-controls="accordion-body_1" onclick = "canvasOn()">アプリケーション</u>
+				を実現するための<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_7"  aria-controls="accordion-body_7" onclick = "canvasOn()">ポート番号</u>や、このパケットが何番目のデータかや、データの破損などを識別します。
 
 			</p>
 			</div>
 			<div class="tab-pane " id="tab-3" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-				<p><span class="space"></span>3_説明<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_2"  aria-controls="accordion-body_2" onclick = "canvasOn()">ネットワーク</u>
-                    と言います。
+				<p><span class="space"></span><u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_8"  aria-controls="accordion-body_8" onclick = "canvasOn()">IP</u>では
+					<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_3"  aria-controls="accordion-body_3" onclick = "canvasOn()">TCP</u>
+					から渡された<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_6"  aria-controls="accordion-body_6" onclick = "canvasOn()">TCPヘッダ</u>
+					と<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_1"  aria-controls="accordion-body_1" onclick = "canvasOn()">アプリケーション</u>
+					のデータを1つのデータとして扱います。
+					そして<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_6"  aria-controls="accordion-body_6" onclick = "canvasOn()">TCPヘッダ</u>の前に
+					<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_9"  aria-controls="accordion-body_9" onclick = "canvasOn()">IPヘッダ</u>を付与します。
+					<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_9"  aria-controls="accordion-body_9" onclick = "canvasOn()">IPヘッダ</u>
+					には、宛先と送信元の<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_10"  aria-controls="accordion-body_10" onclick = "canvasOn()">IPアドレス</u>
+					や、パケットが<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_3"  aria-controls="accordion-body_3" onclick = "canvasOn()">TCP</u>
+					のデータか<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_4"  aria-controls="accordion-body_4" onclick = "canvasOn()">UDP</u>
+					のデータかなどを識別します。
 				</p>
 			</div>
 			<div class="tab-pane " id="tab-4" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-				<p><span class="space"></span>4_説明<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_2"  aria-controls="accordion-body_2" onclick = "canvasOn()">ネットワーク</u>
-                    と言います。
+				<p><span class="space"></span><u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_8"  aria-controls="accordion-body_8" onclick = "canvasOn()">IP</u>
+					から渡されたパケットに、<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_11"  aria-controls="accordion-body_11" onclick = "canvasOn()">イーサネットヘッダ</u>が付与されて送信処理が行われます。
+					<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_11"  aria-controls="accordion-body_11" onclick = "canvasOn()">イーサネットヘッダ</u>
+					には宛先と送信元の<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_12"  aria-controls="accordion-body_12" onclick = "canvasOn()">MACアドレス</u>
+					などが書き込まれます。また、パケットの終わりに<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_13"  aria-controls="accordion-body_13" onclick = "canvasOn()">物理層</u>
+					でパケットが破損したか確認する<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_14"  aria-controls="accordion-body_14" onclick = "canvasOn()">FCS</u>を付けます。
 				</p>
 			</div>
 			<div class="tab-pane " id="tab-5" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
