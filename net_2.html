@@ -82,41 +82,81 @@
 					<div class="accordion" id="accordion_1">
 						<div class="accordion-item">
 						  <h2 class="accordion-header" id="accordion-header_1">
-							<button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion-body_1" aria-expanded="false" aria-controls="accordion-body_1">
+							<button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-body_1" aria-expanded="false" aria-controls="accordion-body_1">
 								<strong>アプリケーション</strong>
 							</button>
 						  </h2>
 						  <div id="accordion-body_1" class="accordion-collapse collapse" aria-labelledby="accordion-header_1">
 							<div class="accordion-body">
-                                アプリケーション層、プレゼンテーション層、セッション層の機能は全てアプリケーションプログラムの中で実現されると考えられています。これら
+								アプリケーションソフトウェアの略で、OSの上で動作するよう特定の目的をもって開発された専用のプログラムのこと<br>
+                                OSI参照モデルでは、アプリケーション層、プレゼンテーション層、セッション層の機能は全てアプリケーションプログラムの中で実現されるとしている。
 							</div>
 						  </div>
 						</div>
 						<div class="accordion-item">
 						  <h2 class="accordion-header" id="accordion-header_2">
 							<button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-body_2" aria-expanded="false" aria-controls="accordion-body_2">
-								<strong>ネットワーク</strong>
+								<strong>符号化</strong>
 							</button>
 						  </h2>
 						  <div id="accordion-body_2" class="accordion-collapse collapse" aria-labelledby="accordion-header_2">
 							<div class="accordion-body">
-							  ネットワークの説明
+							  信号やデータを一定の規則に従ってデータ化すること。アナログ信号をデジタルデータに変換したり、データを暗号化することなどがこれにあたる。
 							</div>
 						  </div>
 						</div>
 						<div class="accordion-item">
 						  <h2 class="accordion-header" id="accordion-header_3">
 							<button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-body_3" aria-expanded="false" aria-controls="accordion-body_3">
-								<strong>C</strong>
+								<strong>TCP</strong>
 							</button>
 						  </h2>
 						  <div id="accordion-body_3" class="accordion-collapse collapse" aria-labelledby="accordion-header_3">
 							<div class="accordion-body">
-							  これは3番目のアイテムのアコーディオン本体。
+							  TCPは、アプリケーションの指示によってコネクションの確立、データの転送、コネクションの切断をする。<br>
+							  TCPは、アプリケーションから渡されたデータを確実に届けるために、信頼性のあるデータ転送を実現する。
 							</div>
 						  </div>
 						</div>
-					  </div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="accordion-header_4">
+							  <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-body_4" aria-expanded="false" aria-controls="accordion-body_4">
+								  <strong>UDP</strong>
+							  </button>
+							</h2>
+							<div id="accordion-body_4" class="accordion-collapse collapse" aria-labelledby="accordion-header_4">
+							  <div class="accordion-body">
+								UDPは、TCPとは違いコネクションの確立は行わない。コネクションの確立、データの転送、コネクションの切断が必要な場合はアプリケーションにまかせる。<br>
+								UDPは、コネクションレス型のプロトコルであることから、TCPに比べると信頼性がないものの高速に転送を行うことができる。<br>
+								動画配信やビデオ会議などに利用される。
+							  </div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="accordion-header_5">
+							  <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-body_5" aria-expanded="false" aria-controls="accordion-body_5">
+								  <strong>プロトコル</strong>
+							  </button>
+							</h2>
+							<div id="accordion-body_5" class="accordion-collapse collapse" aria-labelledby="accordion-header_5">
+							  <div class="accordion-body">
+								  &nbsp;コンピュータコンピュータが互いに通信するために必要な約束ごと。プロトコルがあることによって，コンピュータの製造元や内部が異なっていても通信ができる。
+							  </div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="accordion-header_6">
+							  <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-body_6" aria-expanded="false" aria-controls="accordion-body_6">
+								  <strong>TCPヘッダ</strong>
+							  </button>
+							</h2>
+							<div id="accordion-body_6" class="accordion-collapse collapse" aria-labelledby="accordion-header_6">
+							  <div class="accordion-body">
+								  &nbsp;コンピュータコンピュータが互いに通信するために必要な約束ごと。プロトコルがあることによって，コンピュータの製造元や内部が異なっていても通信ができる。
+							  </div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -132,35 +172,51 @@
 		<!-- パネル部分 -->
 		<div class="tab-content" id="nav-tabContent">
 			<div class="tab-pane active" id="tab-1" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-                <p><span class="space"></span>1_まず、<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_1"  aria-controls="accordion-body_1" onclick = "canvasOn()">アプリケーション</u>
-                    がデータを作成します。</p>
+                <p><span class="space"></span>1_まず、上位層で<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_1"  aria-controls="accordion-body_1" onclick = "canvasOn()">アプリケーション</u>
+                    がデータを作成します。データの送信ボタンなどを押すことにより、通信が始まります。実際の<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_1"  aria-controls="accordion-body_1" onclick = "canvasOn()">アプリケーション</u>
+					では、まずデータの<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_2"  aria-controls="accordion-body_2" onclick = "canvasOn()">符号化</u>
+					を行った後、<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_3"  aria-controls="accordion-body_3" onclick = "canvasOn()">TCP</u>
+					にコネクションの確立を指示しデータの送信を始めます。
+				    <u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_3"  aria-controls="accordion-body_3" onclick = "canvasOn()">TCP</u>
+					の代わりに<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_4"  aria-controls="accordion-body_4" onclick = "canvasOn()">UDP</u>
+					という<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_5"  aria-controls="accordion-body_5" onclick = "canvasOn()">プロトコル</u>を使う場合もあります。
+				</p>
 			</div>
 			<div class="tab-pane" id="tab-2" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-			  <p><span class="space"></span>2_説明</p>
+			  <p><span class="space"></span>2_次に、どのアプリケーションで処理するか判断する<u class="canvas-on"  data-bs-toggle="collapse" href="#accordion-body_6"  aria-controls="accordion-body_6" onclick = "canvasOn()">TCPヘッダ</u>
+				をデータに付与します。TCPヘッダは、
+
+			</p>
 			</div>
 			<div class="tab-pane " id="tab-3" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
 				<p><span class="space"></span>3_説明<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_2"  aria-controls="accordion-body_2" onclick = "canvasOn()">ネットワーク</u>
-                    と言います。</p>
+                    と言います。
+				</p>
 			</div>
 			<div class="tab-pane " id="tab-4" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
 				<p><span class="space"></span>4_説明<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_2"  aria-controls="accordion-body_2" onclick = "canvasOn()">ネットワーク</u>
-                    と言います。</p>
+                    と言います。
+				</p>
 			</div>
 			<div class="tab-pane " id="tab-5" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
 				<p><span class="space"></span>5_説明<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_2"  aria-controls="accordion-body_2" onclick = "canvasOn()">ネットワーク</u>
-                    と言います。</p>
+                    と言います。
+				</p>
 			</div>
 			<div class="tab-pane " id="tab-6" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
 				<p><span class="space"></span>6_説明<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_2"  aria-controls="accordion-body_2" onclick = "canvasOn()">ネットワーク</u>
-                    と言います。</p>
+                    と言います。
+				</p>
 			</div>
 			<div class="tab-pane " id="tab-7" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
 				<p><span class="space"></span>7_説明<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_2"  aria-controls="accordion-body_2" onclick = "canvasOn()">ネットワーク</u>
-                    と言います。</p>
+                    と言います。
+				</p>
 			</div>
 			<div class="tab-pane " id="tab-8" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
 				<p><span class="space"></span>8_説明<u class="canvas-on" data-bs-toggle="collapse" href="#accordion-body_2"  aria-controls="accordion-body_2" onclick = "canvasOn()">ネットワーク</u>
-                    と言います。</p>
+                    と言います。
+				</p>
 			</div>
 		</div>
 	</body>
